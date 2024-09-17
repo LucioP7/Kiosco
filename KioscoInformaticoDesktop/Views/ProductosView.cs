@@ -1,6 +1,7 @@
 ﻿using KioscoInformaticoServices.Models;
 using KioscoInformaticoServices.Services;
 using KioscoInformaticoServices.Interfaces;
+using System.Runtime.CompilerServices;
 
 namespace KioscoInformaticoDesktop.Views
 {
@@ -8,6 +9,7 @@ namespace KioscoInformaticoDesktop.Views
     {
         IGenericService<Producto> productoService = new GenericService<Producto>();
         BindingSource listaproductos = new BindingSource();
+        List<Producto> ListaFiltro = new List<Producto>();
         Producto productoCurrent;
 
         public ProductosView()
@@ -19,9 +21,9 @@ namespace KioscoInformaticoDesktop.Views
 
         private async Task CargarGrilla()
         {
-            {
-                listaproductos.DataSource = await productoService.GetAllAsync();
-            }
+            listaproductos.DataSource = await productoService.GetAllAsync();
+            DataGridProductos.Columns["Id"].DefaultCellStyle.Format = "N0";
+            ListaFiltro = (List<Producto>)listaproductos.DataSource;
         }
 
 
@@ -90,6 +92,27 @@ namespace KioscoInformaticoDesktop.Views
         {
             this.Close();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            FiltrarProductos();
+        }
+
+        private async void FiltrarProductos()
+        {
+            var productosFiltrados = ListaFiltro.Where(p => p.Nombre.Contains(txtFiltro.Text)).ToList();
+            listaproductos.DataSource = productosFiltrados;
+
+        }
+
+        private void txtFiltro_TextChanged(object sender, EventArgs e)
+        {
+            FiltrarProductos();
+        }
     }
 }
-

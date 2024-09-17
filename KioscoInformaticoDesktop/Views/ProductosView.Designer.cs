@@ -31,6 +31,10 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             tabControl = new TabControl();
             tabLista = new TabPage();
+            btnSalir = new FontAwesome.Sharp.IconButton();
+            btnBuscar = new FontAwesome.Sharp.IconButton();
+            label5 = new Label();
+            txtFiltro = new TextBox();
             btnEliminar = new FontAwesome.Sharp.IconButton();
             btnEditar = new FontAwesome.Sharp.IconButton();
             btnAgregar = new FontAwesome.Sharp.IconButton();
@@ -66,6 +70,10 @@
             // 
             // tabLista
             // 
+            tabLista.Controls.Add(btnSalir);
+            tabLista.Controls.Add(btnBuscar);
+            tabLista.Controls.Add(label5);
+            tabLista.Controls.Add(txtFiltro);
             tabLista.Controls.Add(btnEliminar);
             tabLista.Controls.Add(btnEditar);
             tabLista.Controls.Add(btnAgregar);
@@ -78,6 +86,55 @@
             tabLista.Text = "Lista";
             tabLista.UseVisualStyleBackColor = true;
             // 
+            // btnSalir
+            // 
+            btnSalir.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            btnSalir.IconChar = FontAwesome.Sharp.IconChar.X;
+            btnSalir.IconColor = Color.Black;
+            btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnSalir.IconSize = 30;
+            btnSalir.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSalir.Location = new Point(755, 253);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(121, 40);
+            btnSalir.TabIndex = 7;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
+            // 
+            // btnBuscar
+            // 
+            btnBuscar.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            btnBuscar.IconChar = FontAwesome.Sharp.IconChar.Search;
+            btnBuscar.IconColor = Color.Black;
+            btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnBuscar.IconSize = 30;
+            btnBuscar.ImageAlign = ContentAlignment.MiddleLeft;
+            btnBuscar.Location = new Point(755, 24);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(121, 45);
+            btnBuscar.TabIndex = 6;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(13, 3);
+            label5.Name = "label5";
+            label5.Size = new Size(119, 20);
+            label5.TabIndex = 5;
+            label5.Text = "Buscar Producto:";
+            // 
+            // txtFiltro
+            // 
+            txtFiltro.Location = new Point(6, 24);
+            txtFiltro.Name = "txtFiltro";
+            txtFiltro.Size = new Size(723, 27);
+            txtFiltro.TabIndex = 4;
+            txtFiltro.TextChanged += txtFiltro_TextChanged;
+            // 
             // btnEliminar
             // 
             btnEliminar.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
@@ -86,7 +143,7 @@
             btnEliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnEliminar.IconSize = 30;
             btnEliminar.ImageAlign = ContentAlignment.MiddleLeft;
-            btnEliminar.Location = new Point(755, 261);
+            btnEliminar.Location = new Point(755, 197);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(121, 40);
             btnEliminar.TabIndex = 3;
@@ -102,7 +159,7 @@
             btnEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnEditar.IconSize = 30;
             btnEditar.ImageAlign = ContentAlignment.MiddleLeft;
-            btnEditar.Location = new Point(755, 161);
+            btnEditar.Location = new Point(755, 139);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(121, 40);
             btnEditar.TabIndex = 2;
@@ -118,7 +175,7 @@
             btnAgregar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnAgregar.IconSize = 30;
             btnAgregar.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAgregar.Location = new Point(755, 63);
+            btnAgregar.Location = new Point(755, 84);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(121, 40);
             btnAgregar.TabIndex = 1;
@@ -132,9 +189,8 @@
             DataGridProductos.AllowUserToDeleteRows = false;
             DataGridProductos.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             DataGridProductos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            DataGridProductos.BackgroundColor = SystemColors.ActiveCaption;
+            DataGridProductos.BackgroundColor = Color.RosyBrown;
             DataGridProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DataGridProductos.ColumnHeadersVisible = false;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = SystemColors.Window;
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
@@ -275,6 +331,7 @@
             Text = "ProductosView";
             tabControl.ResumeLayout(false);
             tabLista.ResumeLayout(false);
+            tabLista.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)DataGridProductos).EndInit();
             tabPageAgregarEditar.ResumeLayout(false);
             tabPageAgregarEditar.PerformLayout();
@@ -302,5 +359,9 @@
         private NumericUpDown numericPrecio;
         private Label label4;
         private FontAwesome.Sharp.IconButton btnEliminar;
+        private FontAwesome.Sharp.IconButton btnSalir;
+        private FontAwesome.Sharp.IconButton btnBuscar;
+        private Label label5;
+        private TextBox txtFiltro;
     }
 }

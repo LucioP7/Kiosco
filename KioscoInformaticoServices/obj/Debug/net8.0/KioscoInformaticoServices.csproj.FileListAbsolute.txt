@@ -11,3 +11,4 @@ C:\TerceroLucio\Kiosco\KioscoInformaticoServices\obj\Debug\net8.0\KioscoInformat
 C:\TerceroLucio\Kiosco\KioscoInformaticoServices\obj\Debug\net8.0\refint\KioscoInformaticoServices.dll
 C:\TerceroLucio\Kiosco\KioscoInformaticoServices\obj\Debug\net8.0\KioscoInformaticoServices.pdb
 C:\TerceroLucio\Kiosco\KioscoInformaticoServices\obj\Debug\net8.0\ref\KioscoInformaticoServices.dll
+C:\TerceroLucio\Kiosco\KioscoInformaticoServices\obj\Debug\net8.0\KioscoInformaticoServices.sourcelink.json
