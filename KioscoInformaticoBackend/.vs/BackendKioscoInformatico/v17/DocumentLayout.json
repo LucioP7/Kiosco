@@ -1,0 +1,442 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\TerceroLucio\\KioscoInformaticoBackend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\controllers\\proveedorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:controllers\\proveedorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\controllers\\localidadescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:controllers\\localidadescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\controllers\\detallesventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:controllers\\detallesventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\controllers\\detallescomprascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:controllers\\detallescomprascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\controllers\\comprascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:controllers\\comprascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\datacontext\\kioscocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:datacontext\\kioscocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\models\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:models\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\models\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:models\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\models\\localidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:models\\localidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\models\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:models\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\models\\detallescompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:models\\detallescompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\models\\detallesventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:models\\detallesventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\models\\efmigrationshistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:models\\efmigrationshistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\enums\\formadepagoenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:enums\\formadepagoenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\enums\\condicionivaenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:enums\\condicionivaenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kioscoinformaticobackend\\backendkioscoinformatico.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{09D8CA9F-9019-4992-A626-E3B0F18050B3}|KioscoInformaticoBackend.csproj|solutionrelative:backendkioscoinformatico.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 14,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VentasController.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Controllers\\VentasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VentasController.cs",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Controllers\\VentasController.cs",
+              "RelativeToolTip": "Controllers\\VentasController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T18:31:27.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProveedoresController.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Controllers\\ProveedoresController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProveedoresController.cs",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Controllers\\ProveedoresController.cs",
+              "RelativeToolTip": "Controllers\\ProveedoresController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T18:30:05.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductosController.cs",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "Controllers\\ProductosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T18:29:20.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LocalidadesController.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Controllers\\LocalidadesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LocalidadesController.cs",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Controllers\\LocalidadesController.cs",
+              "RelativeToolTip": "Controllers\\LocalidadesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T18:28:07.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DetallesVentasController.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Controllers\\DetallesVentasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DetallesVentasController.cs",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Controllers\\DetallesVentasController.cs",
+              "RelativeToolTip": "Controllers\\DetallesVentasController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T18:26:57.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-06T16:47:53.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DetallesComprasController.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Controllers\\DetallesComprasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DetallesComprasController.cs",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Controllers\\DetallesComprasController.cs",
+              "RelativeToolTip": "Controllers\\DetallesComprasController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T18:26:19.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ComprasController.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Controllers\\ComprasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ComprasController.cs",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Controllers\\ComprasController.cs",
+              "RelativeToolTip": "Controllers\\ComprasController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T18:25:32.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClientesController.cs",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "Controllers\\ClientesController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAYAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T17:50:00.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Proveedor.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Models\\Proveedor.cs",
+              "RelativeDocumentMoniker": "Models\\Proveedor.cs",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Models\\Proveedor.cs",
+              "RelativeToolTip": "Models\\Proveedor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T17:06:56.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Detallescompra.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Models\\Detallescompra.cs",
+              "RelativeDocumentMoniker": "Models\\Detallescompra.cs",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Models\\Detallescompra.cs",
+              "RelativeToolTip": "Models\\Detallescompra.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T16:49:52.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "KioscoContext.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\DataContext\\KioscoContext.cs",
+              "RelativeDocumentMoniker": "DataContext\\KioscoContext.cs",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\DataContext\\KioscoContext.cs",
+              "RelativeToolTip": "DataContext\\KioscoContext.cs",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAvwHQAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T16:50:01.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Compra.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Models\\Compra.cs",
+              "RelativeDocumentMoniker": "Models\\Compra.cs",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Models\\Compra.cs",
+              "RelativeToolTip": "Models\\Compra.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T16:49:50.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T16:48:34.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "Models\\Producto.cs",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Models\\Producto.cs",
+              "RelativeToolTip": "Models\\Producto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T17:07:17.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Venta.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Models\\Venta.cs",
+              "RelativeDocumentMoniker": "Models\\Venta.cs",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Models\\Venta.cs",
+              "RelativeToolTip": "Models\\Venta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T17:07:20.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Localidad.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Models\\Localidad.cs",
+              "RelativeDocumentMoniker": "Models\\Localidad.cs",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Models\\Localidad.cs",
+              "RelativeToolTip": "Models\\Localidad.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T17:08:19.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Detallesventa.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Models\\Detallesventa.cs",
+              "RelativeDocumentMoniker": "Models\\Detallesventa.cs",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Models\\Detallesventa.cs",
+              "RelativeToolTip": "Models\\Detallesventa.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T16:49:57.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "Models\\Cliente.cs",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Models\\Cliente.cs",
+              "RelativeToolTip": "Models\\Cliente.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAMAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T16:49:49.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Efmigrationshistory.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Models\\Efmigrationshistory.cs",
+              "RelativeDocumentMoniker": "Models\\Efmigrationshistory.cs",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Models\\Efmigrationshistory.cs",
+              "RelativeToolTip": "Models\\Efmigrationshistory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T17:07:16.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FormaDePagoEnum.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Enums\\FormaDePagoEnum.cs",
+              "RelativeDocumentMoniker": "Enums\\FormaDePagoEnum.cs",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Enums\\FormaDePagoEnum.cs",
+              "RelativeToolTip": "Enums\\FormaDePagoEnum.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T17:06:24.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CondicionIvaEnum.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Enums\\CondicionIvaEnum.cs",
+              "RelativeDocumentMoniker": "Enums\\CondicionIvaEnum.cs",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\Enums\\CondicionIvaEnum.cs",
+              "RelativeToolTip": "Enums\\CondicionIvaEnum.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T17:06:13.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "WeatherForecast.cs",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\WeatherForecast.cs",
+              "RelativeToolTip": "WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T16:51:20.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BackendKioscoInformatico.http",
+              "DocumentMoniker": "C:\\TerceroLucio\\KioscoInformaticoBackend\\BackendKioscoInformatico.http",
+              "RelativeDocumentMoniker": "BackendKioscoInformatico.http",
+              "ToolTip": "C:\\TerceroLucio\\KioscoInformaticoBackend\\BackendKioscoInformatico.http",
+              "RelativeToolTip": "BackendKioscoInformatico.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-09-06T16:49:41.504Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

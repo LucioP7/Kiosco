@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "aKr7jVNlkKS6gvxEGUuwFGWR1QpPBTJUa4G5BkKdIPw=",
+  "Source": "KioscoInformaticoBackend",
+  "BasePath": "_content/KioscoInformaticoBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
