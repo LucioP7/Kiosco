@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KioscoInformaticoBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3216c2acb91bea053de87b6a2cc40c621a77eae9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba42bbc6fd123d163ed4a577067a14b836dab862")]
 [assembly: System.Reflection.AssemblyProductAttribute("KioscoInformaticoBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KioscoInformaticoBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

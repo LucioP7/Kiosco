@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KioscoInformaticoApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+97360d6b5f54d132e2e2306735a6626c0b05d486")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+ba42bbc6fd123d163ed4a577067a14b836dab862")]
 [assembly: System.Reflection.AssemblyProductAttribute("KioscoInformaticoApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KioscoInformaticoApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
