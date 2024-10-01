@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             panel1 = new Panel();
             label1 = new Label();
             tabControlLista = new TabControl();
@@ -37,7 +38,7 @@
             btnEliminar = new FontAwesome.Sharp.IconButton();
             btnModificar = new FontAwesome.Sharp.IconButton();
             btnAgregar = new FontAwesome.Sharp.IconButton();
-            dataGridLocalidades = new DataGridView();
+            dataGridClientes = new DataGridView();
             txtBuscar = new TextBox();
             label4 = new Label();
             tabPageAgregarEditar = new TabPage();
@@ -56,7 +57,7 @@
             panel1.SuspendLayout();
             tabControlLista.SuspendLayout();
             tabPageLista.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridLocalidades).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridClientes).BeginInit();
             tabPageAgregarEditar.SuspendLayout();
             SuspendLayout();
             // 
@@ -97,7 +98,7 @@
             tabPageLista.Controls.Add(btnEliminar);
             tabPageLista.Controls.Add(btnModificar);
             tabPageLista.Controls.Add(btnAgregar);
-            tabPageLista.Controls.Add(dataGridLocalidades);
+            tabPageLista.Controls.Add(dataGridClientes);
             tabPageLista.Controls.Add(txtBuscar);
             tabPageLista.Controls.Add(label4);
             tabPageLista.Location = new Point(4, 29);
@@ -189,19 +190,30 @@
             btnAgregar.UseVisualStyleBackColor = true;
             btnAgregar.Click += btnAgregar_Click;
             // 
-            // dataGridLocalidades
+            // dataGridClientes
             // 
-            dataGridLocalidades.AllowUserToAddRows = false;
-            dataGridLocalidades.AllowUserToDeleteRows = false;
-            dataGridLocalidades.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dataGridLocalidades.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridLocalidades.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridLocalidades.Location = new Point(3, 64);
-            dataGridLocalidades.Name = "dataGridLocalidades";
-            dataGridLocalidades.ReadOnly = true;
-            dataGridLocalidades.RowHeadersWidth = 51;
-            dataGridLocalidades.Size = new Size(762, 383);
-            dataGridLocalidades.TabIndex = 26;
+            dataGridClientes.AllowUserToAddRows = false;
+            dataGridClientes.AllowUserToDeleteRows = false;
+            dataGridClientes.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Window;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle1.Format = "d";
+            dataGridViewCellStyle1.NullValue = null;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.False;
+            dataGridClientes.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridClientes.Location = new Point(3, 64);
+            dataGridClientes.Name = "dataGridClientes";
+            dataGridClientes.ReadOnly = true;
+            dataGridClientes.RowHeadersWidth = 51;
+            dataGridClientes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridClientes.Size = new Size(762, 383);
+            dataGridClientes.TabIndex = 26;
             // 
             // txtBuscar
             // 
@@ -245,6 +257,7 @@
             // 
             // comboBoxLocalidad
             // 
+            comboBoxLocalidad.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxLocalidad.FormattingEnabled = true;
             comboBoxLocalidad.Location = new Point(345, 284);
             comboBoxLocalidad.Margin = new Padding(3, 4, 3, 4);
@@ -255,7 +268,7 @@
             // dateTimeNacimiento
             // 
             dateTimeNacimiento.Format = DateTimePickerFormat.Short;
-            dateTimeNacimiento.Location = new Point(345, 235);
+            dateTimeNacimiento.Location = new Point(356, 240);
             dateTimeNacimiento.Margin = new Padding(3, 4, 3, 4);
             dateTimeNacimiento.Name = "dateTimeNacimiento";
             dateTimeNacimiento.Size = new Size(260, 27);
@@ -373,7 +386,7 @@
             tabControlLista.ResumeLayout(false);
             tabPageLista.ResumeLayout(false);
             tabPageLista.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridLocalidades).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridClientes).EndInit();
             tabPageAgregarEditar.ResumeLayout(false);
             tabPageAgregarEditar.PerformLayout();
             ResumeLayout(false);
@@ -393,7 +406,7 @@
         private FontAwesome.Sharp.IconButton btnEliminar;
         private FontAwesome.Sharp.IconButton btnModificar;
         private FontAwesome.Sharp.IconButton btnAgregar;
-        private DataGridView dataGridLocalidades;
+        private DataGridView dataGridClientes;
         private FontAwesome.Sharp.IconButton btnCancelar;
         private FontAwesome.Sharp.IconButton btnGuardar;
         private TextBox txtNombre;

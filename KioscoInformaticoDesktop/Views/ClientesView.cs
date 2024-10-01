@@ -26,15 +26,15 @@ namespace KioscoInformaticoDesktop.Views
         public ClientesView()
         {
             InitializeComponent();
-            dataGridLocalidades.DataSource = listaClientes;
+            dataGridClientes.DataSource = listaClientes;
             CargarGrilla();
             CargarCombo();
         }
         private async Task CargarGrilla()
         {
-            // En el método CargarGrilla(), donde estableces la fuente de datos para la grilla, puedes utilizar la propiedad Include() para cargar la entidad Localidad junto con los clientes.Esto se hace para evitar la carga perezosa(lazy loading) y asegurarse de que la propiedad Localidad esté disponible.
             listaClientes.DataSource = await clienteService.GetAllAsync();
             listaAFiltrar = (List<Cliente>)listaClientes.DataSource;
+            dataGridClientes.Columns["LocalidadId"].Visible = false;
         }
         
         private async Task CargarCombo()
