@@ -1,0 +1,52 @@
+﻿﻿@page "/localidades"
+@inject IGenericService<Localidad> LocalidadService
+
+<h3>Localidades</h3>
+
+@if (localidades != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var localidad in localidades)
+            {
+                <tr>
+                    <td>@localidad.Id</td>
+                    <td>@localidad.Nombre</td>
+                    <td>
+                        <a href="/editarlocalidad?IdLocalidadEditada=@localidad.Id">Editar</a>
+                    </td>
+                    <td>
+                        <button title="Eliminar" @onclick="@(()=>Elimnar(localidad))">Eliminar</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p><em>Cargando...</em></p>
+}
+
+@code {
+    private List<Localidad>? localidades;
+
+    protected override async Task OnInitializedAsync()
+    {
+        localidades = await LocalidadService.GetAllAsync();
+    }
+
+    private async void Elimnar(Localidad localidad)
+    {
+        await LocalidadService.DeleteAsync(localidad.Id);
+        localidades = await LocalidadService.GetAllAsync();
+        StateHasChanged();
+    }
+}

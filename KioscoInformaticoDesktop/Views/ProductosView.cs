@@ -29,7 +29,7 @@ namespace KioscoInformaticoDesktop.Views
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            tabControl.SelectTab(tabPageAgregarEditar);
+            tabControl.SelectedTab = tabPageAgregarEditar;
         }
 
         private async void BtnGuardar_Click(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace KioscoInformaticoDesktop.Views
             }
             else
             {
-                var producto = new Producto
+                Producto producto = new Producto()
                 {
                     Nombre = txtNombre.Text,
                     Precio = numericPrecio.Value
@@ -63,7 +63,8 @@ namespace KioscoInformaticoDesktop.Views
 
             await CargarGrilla();
             txtNombre.Text = string.Empty;
-            tabControl.SelectTab(tabLista);
+            numericPrecio.Value = 0;
+            tabControl.SelectedTab = tabLista;
         }
 
 
@@ -73,18 +74,22 @@ namespace KioscoInformaticoDesktop.Views
             txtNombre.Text = productoCurrent.Nombre;
             numericPrecio.Value = productoCurrent.Precio;
 
-
             tabControl.SelectTab(tabPageAgregarEditar);
         }
 
         private async void btnEliminar_Click(object sender, EventArgs e)
         {
-            var result = MessageBox.Show("¿Está seguro que desea eliminar el producto?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
+            productoCurrent = (Producto)listaproductos.Current;
+            DialogResult respuesta = MessageBox.Show($"Está seguro que quiere eliminar el producto {productoCurrent.Nombre}?",
+                                   "Eliminar producto",
+                                   MessageBoxButtons.YesNo,
+                                   MessageBoxIcon.Question);
+
+            if (respuesta == DialogResult.Yes)
             {
-                var producto = (Producto)listaproductos.Current;
-                await productoService.DeleteAsync(producto.Id);
-                CargarGrilla();
+                await productoService.DeleteAsync(productoCurrent.Id);
+                productoCurrent = null;
+                await CargarGrilla();
             }
         }
 

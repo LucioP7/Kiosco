@@ -298,3 +298,6 @@ C:\TerceroLucio\Kiosco\KioscoInformaticoApp\KioscoInformaticoApp\obj\Debug\net8.
 C:\TerceroLucio\Kiosco\KioscoInformaticoApp\KioscoInformaticoApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\KioscoInformaticoApp.pdb
 C:\TerceroLucio\Kiosco\KioscoInformaticoApp\KioscoInformaticoApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\KioscoInformaticoApp.genruntimeconfig.cache
 C:\TerceroLucio\Kiosco\KioscoInformaticoApp\KioscoInformaticoApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ref\KioscoInformaticoApp.dll
+C:\TerceroLucio\Kiosco\KioscoInformaticoApp\KioscoInformaticoApp\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\KioscoInformaticoServices.dll
+C:\TerceroLucio\Kiosco\KioscoInformaticoApp\KioscoInformaticoApp\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\KioscoInformaticoServices.pdb
+C:\TerceroLucio\Kiosco\KioscoInformaticoApp\KioscoInformaticoApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\KioscoInformaticoApp.sourcelink.json

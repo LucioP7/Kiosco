@@ -34,6 +34,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/TerceroLucio/Kiosco/KioscoInformaticoWeb/Pages/Localidades/EditarLocalidad.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9jYWxpZGFkZXNcRWRpdGFyTG9jYWxpZGFkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/TerceroLucio/Kiosco/KioscoInformaticoWeb/Pages/Localidades/Localidades.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9jYWxpZGFkZXNcTG9jYWxpZGFkZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/TerceroLucio/Kiosco/KioscoInformaticoWeb/Pages/Productos/AgregarProducto.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdG9zXEFncmVnYXJQcm9kdWN0by5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/TerceroLucio/Kiosco/KioscoInformaticoWeb/Pages/Productos/EditarProducto.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdG9zXEVkaXRhclByb2R1Y3RvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/TerceroLucio/Kiosco/KioscoInformaticoWeb/Pages/Productos/Productos.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdG9zXFByb2R1Y3Rvcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/TerceroLucio/Kiosco/KioscoInformaticoWeb/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

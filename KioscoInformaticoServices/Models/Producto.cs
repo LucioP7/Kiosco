@@ -10,7 +10,7 @@ public partial class Producto
     public string Nombre { get; set; } = null!;
 
     [Required]
-    public decimal Precio { get; set; }
+    public decimal Precio { get; set; } = 0.00m;
 
     public virtual ICollection<DetallesCompra> DetallesCompras { get; set; } = new List<DetallesCompra>();
 

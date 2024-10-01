@@ -332,3 +332,4 @@ C:\TerceroLucio\Kiosco\KioscoInformaticoDesktop\obj\Debug\net8.0-windows\KioscoI
 C:\TerceroLucio\Kiosco\KioscoInformaticoDesktop\obj\Debug\net8.0-windows\KioscoInformaticoDesktop.genruntimeconfig.cache
 C:\TerceroLucio\Kiosco\KioscoInformaticoDesktop\obj\Debug\net8.0-windows\ref\KioscoInformaticoDesktop.dll
 C:\TerceroLucio\Kiosco\KioscoInformaticoDesktop\obj\Debug\net8.0-windows\KioscoInformaticoDesktop.sourcelink.json
+C:\TerceroLucio\Kiosco\KioscoInformaticoDesktop\obj\Debug\net8.0-windows\KioscoInformaticoDesktop.Views.ClientesView.resources

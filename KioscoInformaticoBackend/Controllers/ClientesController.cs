@@ -1,6 +1,7 @@
 ﻿using KioscoInformaticoBackend.DataContext;
 using KioscoInformaticoServices.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.Elfie.Serialization;
 using Microsoft.EntityFrameworkCore;
 
 namespace KioscoInformaticoBackend.Controllers
@@ -18,8 +19,12 @@ namespace KioscoInformaticoBackend.Controllers
 
         // GET: api/Clientes
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Cliente>>> GetClientes()
+        public async Task<ActionResult<IEnumerable<Cliente>>> GetClientes([FromQuery] string? filtro)
         {
+            if (filtro != null)
+            {
+                return await _context.Clientes.Where(c => c.Nombre.ToUpper().Contains(filtro.ToUpper())).ToListAsync();
+            }
             return await _context.Clientes.ToListAsync();
         }
 
