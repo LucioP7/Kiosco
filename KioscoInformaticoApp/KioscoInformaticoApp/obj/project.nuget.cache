@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8df9KDSzzWszpHpB/oCXTrGQK8kdcqJddT6CxCKuk4hVeDIwzMjV2NIVicqvEgoC/oTWH5S6SSlTy89fDgMzGA==",
+  "dgSpecHash": "nVbc/TOkuhIHEP46I+ZsRfXLW3TDUG9wCMHyY5lEUcdxRMKwAC9QSG9NDnG67+ztMIIAa5j7/UDSQ0uEqvcChA==",
   "success": true,
   "projectFilePath": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Dell14\\.nuget\\packages\\corrected.microsoft.reportingservices.reportviewercontrol.winforms\\150.1358.0\\corrected.microsoft.reportingservices.reportviewercontrol.winforms.150.1358.0.nupkg.sha512",
     "C:\\Users\\Dell14\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\Dell14\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\Dell14\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
@@ -26,6 +27,8 @@
     "C:\\Users\\Dell14\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\8.0.7\\microsoft.maui.graphics.win2d.winui.desktop.8.0.7.nupkg.sha512",
     "C:\\Users\\Dell14\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.7\\microsoft.maui.resizetizer.8.0.7.nupkg.sha512",
     "C:\\Users\\Dell14\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.5\\microsoft.net.illink.tasks.8.0.5.nupkg.sha512",
+    "C:\\Users\\Dell14\\.nuget\\packages\\microsoft.reportingservices.reportviewercontrol.winforms\\150.1652.0\\microsoft.reportingservices.reportviewercontrol.winforms.150.1652.0.nupkg.sha512",
+    "C:\\Users\\Dell14\\.nuget\\packages\\microsoft.sqlserver.types\\14.0.314.76\\microsoft.sqlserver.types.14.0.314.76.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
     "C:\\Users\\Dell14\\.nuget\\packages\\microsoft.windowsappsdk\\1.3.230724000\\microsoft.windowsappsdk.1.3.230724000.nupkg.sha512",
     "C:\\Users\\Dell14\\.nuget\\packages\\xamarin.android.glide\\4.15.1.2\\xamarin.android.glide.4.15.1.2.nupkg.sha512",
@@ -113,5 +116,118 @@
     "C:\\Users\\Dell14\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.7.2.1\\xamarin.kotlinx.coroutines.core.jvm.1.7.2.1.nupkg.sha512",
     "C:\\Users\\Dell14\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.31\\microsoft.windows.sdk.net.ref.10.0.19041.31.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Corrected.Microsoft.ReportingServices.ReportViewerControl.Winforms 150.1358.0 depende de Microsoft.SqlServer.Types (>= 14.0.0), pero no se encontró Microsoft.SqlServer.Types 14.0.0. Se resolvió una mejor coincidencia aproximada de Microsoft.SqlServer.Types 14.0.314.76.",
+      "libraryId": "Microsoft.SqlServer.Types",
+      "targetGraphs": [
+        "net8.0-android34.0",
+        "net8.0-android34.0/android-arm",
+        "net8.0-android34.0/android-arm64",
+        "net8.0-android34.0/android-x64",
+        "net8.0-android34.0/android-x86",
+        "net8.0-android34.0/ios-arm64",
+        "net8.0-android34.0/maccatalyst-x64",
+        "net8.0-android34.0/win10-x64",
+        "net8.0-ios17.2",
+        "net8.0-ios17.2/android-arm",
+        "net8.0-ios17.2/android-arm64",
+        "net8.0-ios17.2/android-x64",
+        "net8.0-ios17.2/android-x86",
+        "net8.0-ios17.2/ios-arm64",
+        "net8.0-ios17.2/maccatalyst-x64",
+        "net8.0-ios17.2/win10-x64",
+        "net8.0-maccatalyst17.2",
+        "net8.0-maccatalyst17.2/android-arm",
+        "net8.0-maccatalyst17.2/android-arm64",
+        "net8.0-maccatalyst17.2/android-x64",
+        "net8.0-maccatalyst17.2/android-x86",
+        "net8.0-maccatalyst17.2/ios-arm64",
+        "net8.0-maccatalyst17.2/maccatalyst-x64",
+        "net8.0-maccatalyst17.2/win10-x64",
+        "net8.0-windows10.0.19041",
+        "net8.0-windows10.0.19041/android-arm",
+        "net8.0-windows10.0.19041/android-arm64",
+        "net8.0-windows10.0.19041/android-x64",
+        "net8.0-windows10.0.19041/android-x86",
+        "net8.0-windows10.0.19041/ios-arm64",
+        "net8.0-windows10.0.19041/maccatalyst-x64",
+        "net8.0-windows10.0.19041/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Microsoft.ReportingServices.ReportViewerControl.Winforms 150.1652.0 depende de Microsoft.SqlServer.Types (>= 14.0.0), pero no se encontró Microsoft.SqlServer.Types 14.0.0. Se resolvió una mejor coincidencia aproximada de Microsoft.SqlServer.Types 14.0.314.76.",
+      "libraryId": "Microsoft.SqlServer.Types",
+      "targetGraphs": [
+        "net8.0-android34.0",
+        "net8.0-android34.0/android-arm",
+        "net8.0-android34.0/android-arm64",
+        "net8.0-android34.0/android-x64",
+        "net8.0-android34.0/android-x86",
+        "net8.0-android34.0/ios-arm64",
+        "net8.0-android34.0/maccatalyst-x64",
+        "net8.0-android34.0/win10-x64",
+        "net8.0-ios17.2",
+        "net8.0-ios17.2/android-arm",
+        "net8.0-ios17.2/android-arm64",
+        "net8.0-ios17.2/android-x64",
+        "net8.0-ios17.2/android-x86",
+        "net8.0-ios17.2/ios-arm64",
+        "net8.0-ios17.2/maccatalyst-x64",
+        "net8.0-ios17.2/win10-x64",
+        "net8.0-maccatalyst17.2",
+        "net8.0-maccatalyst17.2/android-arm",
+        "net8.0-maccatalyst17.2/android-arm64",
+        "net8.0-maccatalyst17.2/android-x64",
+        "net8.0-maccatalyst17.2/android-x86",
+        "net8.0-maccatalyst17.2/ios-arm64",
+        "net8.0-maccatalyst17.2/maccatalyst-x64",
+        "net8.0-maccatalyst17.2/win10-x64",
+        "net8.0-windows10.0.19041",
+        "net8.0-windows10.0.19041/android-arm",
+        "net8.0-windows10.0.19041/android-arm64",
+        "net8.0-windows10.0.19041/android-x64",
+        "net8.0-windows10.0.19041/android-x86",
+        "net8.0-windows10.0.19041/ios-arm64",
+        "net8.0-windows10.0.19041/maccatalyst-x64",
+        "net8.0-windows10.0.19041/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Corrected.Microsoft.ReportingServices.ReportViewerControl.Winforms 150.1358.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net8.0-android34.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Corrected.Microsoft.ReportingServices.ReportViewerControl.Winforms",
+      "targetGraphs": [
+        "net8.0-android34.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Microsoft.ReportingServices.ReportViewerControl.Winforms 150.1652.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net8.0-android34.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Microsoft.ReportingServices.ReportViewerControl.Winforms",
+      "targetGraphs": [
+        "net8.0-android34.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Microsoft.SqlServer.Types 14.0.314.76\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net8.0-android34.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Microsoft.SqlServer.Types",
+      "targetGraphs": [
+        "net8.0-android34.0"
+      ]
+    }
+  ]
 }
