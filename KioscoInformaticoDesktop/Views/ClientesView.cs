@@ -1,4 +1,5 @@
-﻿using KioscoInformaticoServices.Interfaces;
+﻿using FontAwesome.Sharp;
+using KioscoInformaticoServices.Interfaces;
 using KioscoInformaticoServices.Models;
 using KioscoInformaticoServices.Services;
 using System;
@@ -11,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace KioscoInformaticoDesktop.Views
 {
@@ -28,13 +30,13 @@ namespace KioscoInformaticoDesktop.Views
             CargarGrilla();
             CargarCombo();
         }
-
         private async Task CargarGrilla()
         {
+            // En el método CargarGrilla(), donde estableces la fuente de datos para la grilla, puedes utilizar la propiedad Include() para cargar la entidad Localidad junto con los clientes.Esto se hace para evitar la carga perezosa(lazy loading) y asegurarse de que la propiedad Localidad esté disponible.
             listaClientes.DataSource = await clienteService.GetAllAsync();
             listaAFiltrar = (List<Cliente>)listaClientes.DataSource;
         }
-
+        
         private async Task CargarCombo()
         {
             comboBoxLocalidad.DataSource = await localidadService.GetAllAsync();

@@ -196,11 +196,11 @@
             dataGridLocalidades.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridLocalidades.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridLocalidades.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridLocalidades.Location = new Point(0, 64);
+            dataGridLocalidades.Location = new Point(3, 64);
             dataGridLocalidades.Name = "dataGridLocalidades";
             dataGridLocalidades.ReadOnly = true;
             dataGridLocalidades.RowHeadersWidth = 51;
-            dataGridLocalidades.Size = new Size(762, 445);
+            dataGridLocalidades.Size = new Size(762, 383);
             dataGridLocalidades.TabIndex = 26;
             // 
             // txtBuscar
