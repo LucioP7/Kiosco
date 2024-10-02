@@ -821,7 +821,6 @@ C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\scopedcss\Layout\Ma
 C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\scopedcss\Layout\NavMenu.razor.rz.scp.css
 C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\scopedcss\bundle\KioscoInformaticoWeb.styles.css
 C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\scopedcss\projectbundle\KioscoInformaticoWeb.bundle.scp.css
-C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\compressed\y95evdjfld.gz
 C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\compressed\xsh8m5ubuz.gz
 C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\compressed\fxjfo6r8mv.gz
 C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\compressed\7runawc9t5.gz
@@ -1039,3 +1038,10 @@ C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\bin\Debug\net8.0\KioscoInformaticoSe
 C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\webcil\KioscoInformaticoServices.wasm
 C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\compressed\ixlf5hyjh7.gz
 C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\compressed\02fdmjx76f.gz
+C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\scopedcss\Components\Commons\TitlePage.razor.rz.scp.css
+C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\bin\Debug\net8.0\wwwroot\_framework\CurrieTechnologies.Razor.SweetAlert2.wasm
+C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\bin\Debug\net8.0\wwwroot\_framework\CurrieTechnologies.Razor.SweetAlert2.wasm.gz
+C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\bin\Debug\net8.0\CurrieTechnologies.Razor.SweetAlert2.dll
+C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\webcil\CurrieTechnologies.Razor.SweetAlert2.wasm
+C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\compressed\9r9dmgfolr.gz
+C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\compressed\vecp4a5klh.gz
