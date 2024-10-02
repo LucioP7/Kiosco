@@ -1030,3 +1030,12 @@ C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\KioscoInformaticoWe
 C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\refint\KioscoInformaticoWeb.dll
 C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\KioscoInformaticoWeb.pdb
 C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\ref\KioscoInformaticoWeb.dll
+C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\bin\Debug\net8.0\wwwroot\_framework\KioscoInformaticoServices.pdb
+C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\bin\Debug\net8.0\wwwroot\_framework\KioscoInformaticoServices.wasm
+C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\bin\Debug\net8.0\wwwroot\_framework\KioscoInformaticoServices.pdb.gz
+C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\bin\Debug\net8.0\wwwroot\_framework\KioscoInformaticoServices.wasm.gz
+C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\bin\Debug\net8.0\KioscoInformaticoServices.dll
+C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\bin\Debug\net8.0\KioscoInformaticoServices.pdb
+C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\webcil\KioscoInformaticoServices.wasm
+C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\compressed\ixlf5hyjh7.gz
+C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\compressed\02fdmjx76f.gz

@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "KioscoInformaticoWeb",
   "resources": {
-    "hash": "sha256-Kfa9VAdQWQ/kRHZn2U6Sy0Yn0PZ0H1qptFDkbyGjdOk=",
+    "hash": "sha256-LzTNPmnIvs1leteAup1bsjFKVDyQImUxKP/OjzcSnDU=",
     "jsModuleNative": {
       "dotnet.native.8.0.5.jpn2yel69r.js": "sha256-boyHe+0RMZDkzBKGhsrnXPhPg3oZ6UqJnTUzngJPjNY="
     },
@@ -208,10 +208,12 @@
       "mscorlib.wasm": "sha256-XvLAB5IyfVSmj5aaGnPwgVFaaZz8jXmbN8WmeopiPBM=",
       "netstandard.wasm": "sha256-TbMssdnuTiKq1gjTPkpgROAuWN0uhvPnagvWR+wAgNs=",
       "System.Private.CoreLib.wasm": "sha256-sscg+Efk8ROPq+q4IVmhShzITuoOYvB8Bsc+Mp9vcSM=",
-      "KioscoInformaticoWeb.wasm": "sha256-2TPiCyN4NvFrBXXROAH8WR8ptrrRMzI5NF/rka+iDn8="
+      "KioscoInformaticoServices.wasm": "sha256-bA+BiZSnzsc2RbZYiPYaO87yY+RL4Lhow2ZvlzsjSSg=",
+      "KioscoInformaticoWeb.wasm": "sha256-CTXs28pTdyjnJLBIAbP0+oWlucWUZ8oq1vebXZ2Ha+o="
     },
     "pdb": {
-      "KioscoInformaticoWeb.pdb": "sha256-uU+B6lw/rbD8XXx8Jm3UHw+TzGHuwHjtuYjSVFK3xew="
+      "KioscoInformaticoServices.pdb": "sha256-jxoOTkLIMho9yicjMFDKNzgSbXjFuTe0oKnqK/AGP78=",
+      "KioscoInformaticoWeb.pdb": "sha256-8iEJ1tqZN9PGP7j3MaJkZyWDPoXH60ZfGJYdlbOyjoc="
     }
   },
   "cacheBootResources": true,
