@@ -56,11 +56,12 @@ namespace KioscoInformaticoApp.ViewModels
         {
             ObtenerProductosCommand = new Command(async () => await ObtenerProducto());
             FiltrarProductoCommand = new Command(async () => await FiltrarProducto ());
-            ObtenerProducto();
+            _ = ObtenerProducto();
         }
 
         private async Task ObtenerProducto()
         {
+            FiltroProductos = string.Empty;
             ActivityStart = true;
             productsList = await productoService.GetAllAsync();
             Productos = new ObservableCollection<Producto>(productsList);
@@ -70,7 +71,7 @@ namespace KioscoInformaticoApp.ViewModels
         private async Task FiltrarProducto()
         {
             var productosFiltrados = productsList
-                .Where(p => p.Nombre.Contains(FiltroProductos, StringComparison.OrdinalIgnoreCase))
+                .Where(p => p.Nombre.ToUpper().Contains(FiltroProductos.ToUpper()))
                 .ToList();
             Productos = new ObservableCollection<Producto>(productosFiltrados);
         }
