@@ -3,28 +3,40 @@
   "WorkspaceRootPath": "C:\\TerceroLucio\\Kiosco\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB86B920-E6C9-44AD-B7ED-488F102B3DDB}|KioscoInformaticoWeb\\KioscoInformaticoWeb.csproj|c:\\tercerolucio\\kiosco\\kioscoinformaticoweb\\pages\\localidades\\localidades.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB86B920-E6C9-44AD-B7ED-488F102B3DDB}|KioscoInformaticoWeb\\KioscoInformaticoWeb.csproj|solutionrelative:kioscoinformaticoweb\\pages\\localidades\\localidades.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{231E692B-4CE3-4937-A5D7-600E986EFD00}|KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj|c:\\tercerolucio\\kiosco\\kioscoinformaticoapp\\kioscoinformaticoapp\\viewmodels\\productosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{231E692B-4CE3-4937-A5D7-600E986EFD00}|KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj|solutionrelative:kioscoinformaticoapp\\kioscoinformaticoapp\\viewmodels\\productosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB86B920-E6C9-44AD-B7ED-488F102B3DDB}|KioscoInformaticoWeb\\KioscoInformaticoWeb.csproj|c:\\tercerolucio\\kiosco\\kioscoinformaticoweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB86B920-E6C9-44AD-B7ED-488F102B3DDB}|KioscoInformaticoWeb\\KioscoInformaticoWeb.csproj|solutionrelative:kioscoinformaticoweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{231E692B-4CE3-4937-A5D7-600E986EFD00}|KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj|c:\\tercerolucio\\kiosco\\kioscoinformaticoapp\\kioscoinformaticoapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{231E692B-4CE3-4937-A5D7-600E986EFD00}|KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj|solutionrelative:kioscoinformaticoapp\\kioscoinformaticoapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1876C8F-E1E9-4082-BE26-CA355B45F7D4}|KioscoInformaticoBackend\\KioscoInformaticoBackend.csproj|c:\\tercerolucio\\kiosco\\kioscoinformaticobackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1876C8F-E1E9-4082-BE26-CA355B45F7D4}|KioscoInformaticoBackend\\KioscoInformaticoBackend.csproj|solutionrelative:kioscoinformaticobackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{231E692B-4CE3-4937-A5D7-600E986EFD00}|KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj|c:\\tercerolucio\\kiosco\\kioscoinformaticoapp\\kioscoinformaticoapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{231E692B-4CE3-4937-A5D7-600E986EFD00}|KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj|solutionrelative:kioscoinformaticoapp\\kioscoinformaticoapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB86B920-E6C9-44AD-B7ED-488F102B3DDB}|KioscoInformaticoWeb\\KioscoInformaticoWeb.csproj|c:\\tercerolucio\\kiosco\\kioscoinformaticoweb\\pages\\productos\\productos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB86B920-E6C9-44AD-B7ED-488F102B3DDB}|KioscoInformaticoWeb\\KioscoInformaticoWeb.csproj|solutionrelative:kioscoinformaticoweb\\pages\\productos\\productos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{231E692B-4CE3-4937-A5D7-600E986EFD00}|KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj|c:\\tercerolucio\\kiosco\\kioscoinformaticoapp\\kioscoinformaticoapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{231E692B-4CE3-4937-A5D7-600E986EFD00}|KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj|solutionrelative:kioscoinformaticoapp\\kioscoinformaticoapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB86B920-E6C9-44AD-B7ED-488F102B3DDB}|KioscoInformaticoWeb\\KioscoInformaticoWeb.csproj|c:\\tercerolucio\\kiosco\\kioscoinformaticoweb\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB86B920-E6C9-44AD-B7ED-488F102B3DDB}|KioscoInformaticoWeb\\KioscoInformaticoWeb.csproj|solutionrelative:kioscoinformaticoweb\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{231E692B-4CE3-4937-A5D7-600E986EFD00}|KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj|c:\\tercerolucio\\kiosco\\kioscoinformaticoapp\\kioscoinformaticoapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{231E692B-4CE3-4937-A5D7-600E986EFD00}|KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj|solutionrelative:kioscoinformaticoapp\\kioscoinformaticoapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB86B920-E6C9-44AD-B7ED-488F102B3DDB}|KioscoInformaticoWeb\\KioscoInformaticoWeb.csproj|c:\\tercerolucio\\kiosco\\kioscoinformaticoweb\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB86B920-E6C9-44AD-B7ED-488F102B3DDB}|KioscoInformaticoWeb\\KioscoInformaticoWeb.csproj|solutionrelative:kioscoinformaticoweb\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{231E692B-4CE3-4937-A5D7-600E986EFD00}|KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj|c:\\tercerolucio\\kiosco\\kioscoinformaticoapp\\kioscoinformaticoapp\\views\\iniciarsesionview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{231E692B-4CE3-4937-A5D7-600E986EFD00}|KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj|solutionrelative:kioscoinformaticoapp\\kioscoinformaticoapp\\views\\iniciarsesionview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{231E692B-4CE3-4937-A5D7-600E986EFD00}|KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj|c:\\tercerolucio\\kiosco\\kioscoinformaticoapp\\kioscoinformaticoapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{231E692B-4CE3-4937-A5D7-600E986EFD00}|KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj|solutionrelative:kioscoinformaticoapp\\kioscoinformaticoapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{231E692B-4CE3-4937-A5D7-600E986EFD00}|KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj|c:\\tercerolucio\\kiosco\\kioscoinformaticoapp\\kioscoinformaticoapp\\views\\productosview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{231E692B-4CE3-4937-A5D7-600E986EFD00}|KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj|solutionrelative:kioscoinformaticoapp\\kioscoinformaticoapp\\views\\productosview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB0EA8D0-35D4-40A1-98B5-A20BDE5EAD8A}|KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj|c:\\tercerolucio\\kiosco\\kioscoinformaticodesktop\\kioscoinformaticodesktop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DB0EA8D0-35D4-40A1-98B5-A20BDE5EAD8A}|KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj|solutionrelative:kioscoinformaticodesktop\\kioscoinformaticodesktop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,80 +86,119 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoBackend\\Program.cs",
-              "RelativeDocumentMoniker": "KioscoInformaticoBackend\\Program.cs",
-              "ToolTip": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoBackend\\Program.cs",
-              "RelativeToolTip": "KioscoInformaticoBackend\\Program.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAAACUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T20:40:05.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoWeb\\_Imports.razor",
-              "RelativeDocumentMoniker": "KioscoInformaticoWeb\\_Imports.razor",
-              "ToolTip": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoWeb\\_Imports.razor",
-              "RelativeToolTip": "KioscoInformaticoWeb\\_Imports.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-02T20:00:43.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoWeb\\wwwroot\\index.html",
-              "RelativeDocumentMoniker": "KioscoInformaticoWeb\\wwwroot\\index.html",
-              "ToolTip": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoWeb\\wwwroot\\index.html",
-              "RelativeToolTip": "KioscoInformaticoWeb\\wwwroot\\index.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAABcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-10-02T19:57:22.352Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoWeb\\Program.cs",
-              "RelativeDocumentMoniker": "KioscoInformaticoWeb\\Program.cs",
-              "ToolTip": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoWeb\\Program.cs",
-              "RelativeToolTip": "KioscoInformaticoWeb\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAiAAAA",
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "KioscoInformaticoApp\\KioscoInformaticoApp\\App.xaml.cs",
+              "ToolTip": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\App.xaml.cs",
+              "RelativeToolTip": "KioscoInformaticoApp\\KioscoInformaticoApp\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T19:54:52.971Z",
+              "WhenOpened": "2024-10-04T18:23:12.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\App.xaml",
+              "RelativeDocumentMoniker": "KioscoInformaticoApp\\KioscoInformaticoApp\\App.xaml",
+              "ToolTip": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\App.xaml",
+              "RelativeToolTip": "KioscoInformaticoApp\\KioscoInformaticoApp\\App.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-04T18:13:34.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\AppShell.xaml",
+              "RelativeDocumentMoniker": "KioscoInformaticoApp\\KioscoInformaticoApp\\AppShell.xaml",
+              "ToolTip": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\AppShell.xaml",
+              "RelativeToolTip": "KioscoInformaticoApp\\KioscoInformaticoApp\\AppShell.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-04T18:12:32.757Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Productos.razor",
-              "DocumentMoniker": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoWeb\\Pages\\Productos\\Productos.razor",
-              "RelativeDocumentMoniker": "KioscoInformaticoWeb\\Pages\\Productos\\Productos.razor",
-              "ToolTip": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoWeb\\Pages\\Productos\\Productos.razor",
-              "RelativeToolTip": "KioscoInformaticoWeb\\Pages\\Productos\\Productos.razor",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-02T19:08:36.282Z",
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\MainPage.xaml",
+              "RelativeDocumentMoniker": "KioscoInformaticoApp\\KioscoInformaticoApp\\MainPage.xaml",
+              "ToolTip": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\MainPage.xaml",
+              "RelativeToolTip": "KioscoInformaticoApp\\KioscoInformaticoApp\\MainPage.xaml",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAmwCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-04T18:12:30.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "KioscoInformaticoApp\\KioscoInformaticoApp\\MauiProgram.cs",
+              "ToolTip": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\MauiProgram.cs",
+              "RelativeToolTip": "KioscoInformaticoApp\\KioscoInformaticoApp\\MauiProgram.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T18:12:28.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IniciarSesionView.xaml",
+              "DocumentMoniker": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\Views\\IniciarSesionView.xaml",
+              "RelativeDocumentMoniker": "KioscoInformaticoApp\\KioscoInformaticoApp\\Views\\IniciarSesionView.xaml",
+              "ToolTip": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\Views\\IniciarSesionView.xaml",
+              "RelativeToolTip": "KioscoInformaticoApp\\KioscoInformaticoApp\\Views\\IniciarSesionView.xaml",
+              "ViewState": "AQIAACsAAAAAAAAAAAAmwEoAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-04T17:54:36.696Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Localidades.razor",
-              "DocumentMoniker": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoWeb\\Pages\\Localidades\\Localidades.razor",
-              "RelativeDocumentMoniker": "KioscoInformaticoWeb\\Pages\\Localidades\\Localidades.razor",
-              "ToolTip": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoWeb\\Pages\\Localidades\\Localidades.razor",
-              "RelativeToolTip": "KioscoInformaticoWeb\\Pages\\Localidades\\Localidades.razor",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAD4AAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-02T20:01:25.574Z",
+              "Title": "ProductosViewModel.cs",
+              "DocumentMoniker": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\ViewModels\\ProductosViewModel.cs",
+              "RelativeDocumentMoniker": "KioscoInformaticoApp\\KioscoInformaticoApp\\ViewModels\\ProductosViewModel.cs",
+              "ToolTip": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\ViewModels\\ProductosViewModel.cs*",
+              "RelativeToolTip": "KioscoInformaticoApp\\KioscoInformaticoApp\\ViewModels\\ProductosViewModel.cs*",
+              "ViewState": "AQIAACwAAAAAAAAAAADwvzoAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T16:48:09.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductosView.xaml",
+              "DocumentMoniker": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\Views\\ProductosView.xaml",
+              "RelativeDocumentMoniker": "KioscoInformaticoApp\\KioscoInformaticoApp\\Views\\ProductosView.xaml",
+              "ToolTip": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\Views\\ProductosView.xaml",
+              "RelativeToolTip": "KioscoInformaticoApp\\KioscoInformaticoApp\\Views\\ProductosView.xaml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAABMAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-04T16:45:21.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "KioscoInformaticoDesktop",
+              "DocumentMoniker": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj",
+              "RelativeDocumentMoniker": "KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj",
+              "ToolTip": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj",
+              "RelativeToolTip": "KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-04T18:12:23.339Z",
               "EditorCaption": ""
             }
           ]

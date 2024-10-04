@@ -47,3 +47,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = KioscoInformaticoApp.Views.IniciarSesionView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\IniciarSesionView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\IniciarSesionView.xaml
+
+[C:/TerceroLucio/Kiosco/KioscoInformaticoApp/KioscoInformaticoApp/Views/ProductosView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = KioscoInformaticoApp.Views.ProductosView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProductosView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProductosView.xaml

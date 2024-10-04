@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\TerceroLucio\Kiosco\KioscoInformaticoApp\KioscoInformaticoApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-09-20T18:29:18.863</Modified>
+      <Modified>2024-10-04T18:25:05.750</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\TerceroLucio\Kiosco\KioscoInformaticoApp\KioscoInformaticoApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-09-20T18:29:18.409</Modified>
+      <Modified>2024-10-04T18:11:25.590</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\TerceroLucio\Kiosco\KioscoInformaticoApp\KioscoInformaticoApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\KioscoInformaticoApp.runtimeconfig.json">
       <PackagePath>KioscoInformaticoApp.runtimeconfig.json</PackagePath>
-      <Modified>2024-09-13T18:33:23.563</Modified>
+      <Modified>2024-10-04T16:46:36.395</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\TerceroLucio\Kiosco\KioscoInformaticoApp\KioscoInformaticoApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\KioscoInformaticoApp.dll">
       <PackagePath>KioscoInformaticoApp.dll</PackagePath>
-      <Modified>2024-09-20T18:29:15.376</Modified>
+      <Modified>2024-10-04T18:25:03.871</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\TerceroLucio\Kiosco\KioscoInformaticoApp\KioscoInformaticoApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>KioscoInformaticoApp.exe</PackagePath>
-      <Modified>2024-09-20T18:29:15.520</Modified>
+      <Modified>2024-10-04T18:25:03.893</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\TerceroLucio\Kiosco\KioscoInformaticoApp\KioscoInformaticoApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -287,7 +287,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\TerceroLucio\Kiosco\KioscoInformaticoApp\KioscoInformaticoApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\KioscoInformaticoApp.deps.json">
       <PackagePath>KioscoInformaticoApp.deps.json</PackagePath>
-      <Modified>2024-09-13T18:33:23.188</Modified>
+      <Modified>2024-10-04T17:58:18.489</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dell14\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -571,7 +571,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\TerceroLucio\Kiosco\KioscoInformaticoServices\bin\Debug\net8.0\KioscoInformaticoServices.dll">
       <PackagePath>KioscoInformaticoServices.dll</PackagePath>
-      <Modified>2024-09-18T17:22:11.498</Modified>
+      <Modified>2024-10-02T17:59:55.633</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dell14\.nuget\packages\microsoft.maui.controls.compatibility\8.0.7\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
