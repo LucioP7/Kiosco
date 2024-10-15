@@ -830,10 +830,7 @@
       "System.Threading.Channels/6.0.0": {},
       "KioscoInformaticoServices/1.0.0": {
         "runtime": {
-          "KioscoInformaticoServices.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "KioscoInformaticoServices.dll": {}
         }
       }
     }

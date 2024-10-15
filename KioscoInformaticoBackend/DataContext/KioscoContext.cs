@@ -1,6 +1,9 @@
-﻿using KioscoInformaticoServices.Enums;
+﻿using System;
+using System.Collections.Generic;
+using KioscoInformaticoServices.Enums;
 using KioscoInformaticoServices.Models;
 using Microsoft.EntityFrameworkCore;
+using Pomelo.EntityFrameworkCore.MySql.Scaffolding.Internal;
 
 namespace KioscoInformaticoBackend.DataContext;
 
@@ -19,11 +22,9 @@ public partial class KioscoContext : DbContext
 
     public virtual DbSet<Compra> Compras { get; set; }
 
-    public virtual DbSet<DetallesCompra> DetallesCompras { get; set; }
+    public virtual DbSet<DetalleCompra> Detallescompras { get; set; }
 
-    public virtual DbSet<DetallesVenta> DetallesVentas { get; set; }
-
-    public virtual DbSet<Efmigrationshistory> Efmigrationshistories { get; set; }
+    public virtual DbSet<DetalleVenta> Detallesventas { get; set; }
 
     public virtual DbSet<Localidad> Localidades { get; set; }
 
@@ -36,9 +37,8 @@ public partial class KioscoContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         var configuration = new ConfigurationBuilder()
-                                //.SetBasePath(Directory.GetCurrentDirectory()) Especifica para escritorio
-                                .AddJsonFile("appsettings.json")
-                                .Build();
+                .AddJsonFile("appsettings.json")
+                .Build();
         string? cadenaConexion = configuration.GetConnectionString("mysqlRemoto");
 
         optionsBuilder.UseMySql(cadenaConexion, ServerVersion.AutoDetect(cadenaConexion));
@@ -46,231 +46,62 @@ public partial class KioscoContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        #region configuracion de tablas
-        modelBuilder
-            .UseCollation("utf8mb4_general_ci")
-            .HasCharSet("utf8mb4");
-
-        modelBuilder.Entity<Cliente>(entity =>
-        {
-            entity.HasKey(e => e.Id).HasName("PRIMARY");
-
-            entity.ToTable("clientes");
-
-            entity.HasIndex(e => e.LocalidadId, "IX_Clientes_LocalidadId");
-
-            entity.Property(e => e.Id).HasColumnType("int(11)");
-            entity.Property(e => e.FechaNacimiento).HasMaxLength(6);
-            entity.Property(e => e.LocalidadId).HasColumnType("int(11)");
-
-            //entity.HasOne(d => d.Localidad).WithMany(p => p.Clientes)
-            //    .HasForeignKey(d => d.LocalidadId)
-            //    .HasConstraintName("FK_Clientes_Localidades_LocalidadId");
-        });
-
-        modelBuilder.Entity<Compra>(entity =>
-        {
-            entity.HasKey(e => e.Id).HasName("PRIMARY");
-
-            entity.ToTable("compras");
-
-            entity.HasIndex(e => e.ProveedorId, "IX_Compras_ProveedorID");
-
-            entity.Property(e => e.Id).HasColumnType("int(11)");
-            entity.Property(e => e.Fecha).HasMaxLength(6);
-            entity.Property(e => e.FormaDePago).HasColumnType("int(11)");
-            entity.Property(e => e.Iva).HasColumnType("int(11)");
-            entity.Property(e => e.ProveedorId)
-                .HasColumnType("int(11)")
-                .HasColumnName("ProveedorID");
-            entity.Property(e => e.Total).HasColumnType("int(11)");
-
-            entity.HasOne(d => d.Proveedor).WithMany(p => p.Compras)
-                .HasForeignKey(d => d.ProveedorId)
-                .HasConstraintName("FK_Compras_Proveedores_ProveedorID");
-        });
-
-        modelBuilder.Entity<DetallesCompra>(entity =>
-        {
-            entity.HasKey(e => e.Id).HasName("PRIMARY");
-
-            entity.ToTable("detallescompras");
-
-            entity.HasIndex(e => e.ProductoId, "IX_DetallesCompras_ProductoId");
-
-            entity.Property(e => e.Id).HasColumnType("int(11)");
-            entity.Property(e => e.Cantidad).HasColumnType("int(11)");
-            entity.Property(e => e.CompraId).HasColumnType("int(11)");
-            entity.Property(e => e.ProductoId).HasColumnType("int(11)");
-
-            entity.HasOne(d => d.Producto).WithMany(p => p.DetallesCompras)
-                .HasForeignKey(d => d.ProductoId)
-                .HasConstraintName("FK_DetallesCompras_Productos_ProductoId");
-        });
-
-        modelBuilder.Entity<DetallesVenta>(entity =>
-        {
-            entity.HasKey(e => e.Id).HasName("PRIMARY");
-
-            entity.ToTable("detallesventas");
-
-            entity.HasIndex(e => e.ProductoId, "IX_DetallesVentas_ProductoId");
-
-            entity.HasIndex(e => e.VentaId, "IX_DetallesVentas_VentaId");
-
-            entity.Property(e => e.Id).HasColumnType("int(11)");
-            entity.Property(e => e.Cantidad).HasColumnType("int(11)");
-            entity.Property(e => e.ProductoId).HasColumnType("int(11)");
-            entity.Property(e => e.VentaId).HasColumnType("int(11)");
-
-            entity.HasOne(d => d.Producto).WithMany(p => p.DetallesVentas)
-                .HasForeignKey(d => d.ProductoId)
-                .HasConstraintName("FK_DetallesVentas_Productos_ProductoId");
-
-            entity.HasOne(d => d.Venta).WithMany(p => p.DetallesVentas)
-                .HasForeignKey(d => d.VentaId)
-                .HasConstraintName("FK_DetallesVentas_Ventas_VentaId");
-        });
-
-        modelBuilder.Entity<Efmigrationshistory>(entity =>
-        {
-            entity.HasKey(e => e.MigrationId).HasName("PRIMARY");
-
-            entity.ToTable("__efmigrationshistory");
-
-            entity.Property(e => e.MigrationId).HasMaxLength(150);
-            entity.Property(e => e.ProductVersion).HasMaxLength(32);
-        });
-
-        modelBuilder.Entity<Localidad>(entity =>
-        {
-            entity.HasKey(e => e.Id).HasName("PRIMARY");
-
-            entity.ToTable("localidades");
-
-            entity.Property(e => e.Id).HasColumnType("int(11)");
-        });
-
-        modelBuilder.Entity<Producto>(entity =>
-        {
-            entity.HasKey(e => e.Id).HasName("PRIMARY");
-
-            entity.ToTable("productos");
-
-            entity.Property(e => e.Id).HasColumnType("int(11)");
-        });
-
-        modelBuilder.Entity<Proveedor>(entity =>
-        {
-            entity.HasKey(e => e.Id).HasName("PRIMARY");
-
-            entity.ToTable("proveedores");
-
-            entity.HasIndex(e => e.LocalidadId, "IX_Proveedores_LocalidadId");
-
-            entity.Property(e => e.Id).HasColumnType("int(11)");
-            entity.Property(e => e.CondicionIva).HasColumnType("int(11)");
-            entity.Property(e => e.LocalidadId).HasColumnType("int(11)");
-
-            //entity.HasOne(d => d.Localidad).WithMany(p => p.Proveedores)
-            //    .HasForeignKey(d => d.LocalidadId)
-            //    .HasConstraintName("FK_Proveedores_Localidades_LocalidadId");
-        });
-
-        modelBuilder.Entity<Venta>(entity =>
-        {
-            entity.HasKey(e => e.Id).HasName("PRIMARY");
-
-            entity.ToTable("ventas");
-
-            entity.HasIndex(e => e.ClienteId, "IX_Ventas_ClienteId");
-
-            entity.Property(e => e.Id).HasColumnType("int(11)");
-            entity.Property(e => e.ClienteId).HasColumnType("int(11)");
-            entity.Property(e => e.Fecha).HasMaxLength(6);
-            entity.Property(e => e.FormaPago).HasColumnType("int(11)");
-
-            entity.HasOne(d => d.Cliente).WithMany(p => p.Venta)
-                .HasForeignKey(d => d.ClienteId)
-                .HasConstraintName("FK_Ventas_Clientes_ClienteId");
-        });
-        #endregion
-        #region datos semillas
-        //carga de datos semilla Productos
+        #region  Datos semilla
+        // Carga de datos semilla de Productos
         modelBuilder.Entity<Producto>().HasData(
-            new Producto() { Id = 1, Nombre = "Coca Cola 2lts", Precio = 2650 },
-            new Producto() { Id = 2, Nombre = "Sprite 2lts", Precio = 2450 },
-            new Producto() { Id = 3, Nombre = "Fanta 2lts", Precio = 2550 }
+            new Producto() { Id = 1, Nombre = "Coca-Cola 2lts", Precio = 2500 },
+            new Producto() { Id = 2, Nombre = "Papas Lays 160grs", Precio = 1500 },
+            new Producto() { Id = 3, Nombre = "Agua Mineral 2lts", Precio = 2000 }
             );
-        //carga de datos semilla de localidades
+
+        // Carga de datos semilla de Localidades
         modelBuilder.Entity<Localidad>().HasData(
             new Localidad() { Id = 1, Nombre = "San Justo" },
             new Localidad() { Id = 2, Nombre = "Videla" },
-            new Localidad() { Id = 3, Nombre = "Escalada" }
+            new Localidad() { Id = 3, Nombre = "Reconquista" }
             );
-        //carga de datos semilla de clientes
+
+        // Carga de datos semilla de Clientes
         modelBuilder.Entity<Cliente>().HasData(
-        new Cliente
-        {
-            Id = 1,
-            Nombre = "Juan Pérez",
-            Direccion = "Calle Falsa 123",
-            Telefonos = "123456789",
-            FechaNacimiento = new DateTime(1985, 5, 15),
-            LocalidadId = 1
-        },
-        new Cliente
-        {
-            Id = 2,
-            Nombre = "María López",
-            Direccion = "Avenida Siempre Viva 742",
-            Telefonos = "987654321",
-            FechaNacimiento = new DateTime(1990, 8, 25),
-            LocalidadId = 2
-        },
-        new Cliente
-        {
-            Id = 3,
-            Nombre = "Carlos García",
-            Direccion = "Boulevard de los Sueños Rotos 101",
-            Telefonos = "555666777",
-            FechaNacimiento = new DateTime(1978, 2, 3),
-            LocalidadId = 3
-        },
-        new Cliente
-        {
-            Id = 4,
-            Nombre = "Ana Martínez",
-            Direccion = "Ruta Nacional 19 Km 58",
-            Telefonos = "444555666",
-            FechaNacimiento = new DateTime(2000, 12, 12),
-            LocalidadId = 1
-        },
-        new Cliente
-        {
-            Id = 5,
-            Nombre = "Pedro Fernández",
-            Direccion = "Calle del Sol 456",
-            Telefonos = "333444555",
-            FechaNacimiento = new DateTime(1995, 7, 30),
-            LocalidadId = 2
-        }
-        );
-        //Carga de datos semillas de ventas
-        modelBuilder.Entity<Venta>().HasData(
-            new Venta()
+            new Cliente
             {
                 Id = 1,
-                FormaPago = FormaDePagoEnum.Efectivo,
-                Iva = 21m,
-                Total = 3000m,
-                ClienteId = 1,
-                Fecha = DateTime.Now
+                Nombre = "Juan Pérez",
+                Direccion = "Calle Falsa 123",
+                Telefonos = "123456789",
+                FechaNacimiento = new DateTime(1985, 5, 15),
+                LocalidadId = 1
             },
-            new Venta() { Id = 2, FormaPago = FormaDePagoEnum.Tarjeta_Credito, Iva = 10, Total = 5000m, ClienteId = 2, Fecha = DateTime.Now },
-            new Venta() { Id = 3, FormaPago = FormaDePagoEnum.Tarjeta_Debito, Iva = 21, Total = 8000m, ClienteId = 1, Fecha = DateTime.Now }
-        );
-        //carga de datos semilla de proveedores
+            new Cliente
+            {
+                Id = 2,
+                Nombre = "María López",
+                Direccion = "Avenida Siempre Viva 742",
+                Telefonos = "987654321",
+                FechaNacimiento = new DateTime(1990, 8, 25),
+                LocalidadId = 2
+            },
+            new Cliente
+            {
+                Id = 3,
+                Nombre = "Carlos García",
+                Direccion = "Boulevard de los Sueños Rotos 101",
+                Telefonos = "555666777",
+                FechaNacimiento = new DateTime(1978, 2, 3),
+                LocalidadId = 3
+            },
+            new Cliente
+            {
+                Id = 4,
+                Nombre = "Ana Martínez",
+                Direccion = "Ruta Nacional 19 Km 58",
+                Telefonos = "444555666",
+                FechaNacimiento = new DateTime(2000, 12, 12),
+                LocalidadId = 1
+            }
+            );
+
+        // Carga de datos semilla de Proveedores
         modelBuilder.Entity<Proveedor>().HasData(
         new Proveedor
         {
@@ -279,7 +110,7 @@ public partial class KioscoContext : DbContext
             Direccion = "Calle 1",
             Telefonos = "111111111",
             Cbu = "0000003100010000000001",
-            CondicionIva = CondicionIvaEnum.ResponsableInscripto,
+            CondicionIva = CondicionIvaEnum.Consumidor_final,
             LocalidadId = 1
         },
         new Proveedor
@@ -299,7 +130,7 @@ public partial class KioscoContext : DbContext
             Direccion = "Calle 3",
             Telefonos = "333333333",
             Cbu = "0000003100010000000003",
-            CondicionIva = CondicionIvaEnum.ConsumidorFinal,
+            CondicionIva = CondicionIvaEnum.Consumidor_final,
             LocalidadId = 3
         },
         new Proveedor
@@ -319,8 +150,8 @@ public partial class KioscoContext : DbContext
             Direccion = "Calle 5",
             Telefonos = "555555555",
             Cbu = "0000003100010000000005",
-            CondicionIva = CondicionIvaEnum.NoResponsable,
-            LocalidadId = 2
+            CondicionIva = CondicionIvaEnum.No_responsable,
+            LocalidadId = 1
         },
         new Proveedor
         {
@@ -329,8 +160,8 @@ public partial class KioscoContext : DbContext
             Direccion = "Calle 6",
             Telefonos = "666666666",
             Cbu = "0000003100010000000006",
-            CondicionIva = CondicionIvaEnum.ResponsableNoInscripto,
-            LocalidadId = 1
+            CondicionIva = CondicionIvaEnum.Consumidor_final,
+            LocalidadId = 2
         },
         new Proveedor
         {
@@ -339,8 +170,8 @@ public partial class KioscoContext : DbContext
             Direccion = "Calle 7",
             Telefonos = "777777777",
             Cbu = "0000003100010000000007",
-            CondicionIva = CondicionIvaEnum.ResponsableInscripto,
-            LocalidadId = 1
+            CondicionIva = CondicionIvaEnum.Exento,
+            LocalidadId = 3
         },
         new Proveedor
         {
@@ -349,8 +180,8 @@ public partial class KioscoContext : DbContext
             Direccion = "Calle 8",
             Telefonos = "888888888",
             Cbu = "0000003100010000000008",
-            CondicionIva = CondicionIvaEnum.SujetoNoCategorizado,
-            LocalidadId = 3
+            CondicionIva = CondicionIvaEnum.Consumidor_final,
+            LocalidadId = 2
         },
         new Proveedor
         {
@@ -360,7 +191,7 @@ public partial class KioscoContext : DbContext
             Telefonos = "999999999",
             Cbu = "0000003100010000000009",
             CondicionIva = CondicionIvaEnum.Monotributista,
-            LocalidadId = 1
+            LocalidadId = 3
         },
         new Proveedor
         {
@@ -370,10 +201,41 @@ public partial class KioscoContext : DbContext
             Telefonos = "101010101",
             Cbu = "0000003100010000000010",
             CondicionIva = CondicionIvaEnum.Exento,
-            LocalidadId = 2
+            LocalidadId = 3
         }
     );
-        //carga de datos semilla de compras
+        // Carga de datos semilla de Ventas
+        modelBuilder.Entity<Venta>().HasData(
+            new Venta()
+            {
+                Id = 1,
+                FormaPago = FormaDePagoEnum.Efectivo,
+                Iva = 21m,
+                Total = 3000m,
+                ClienteId = 1,
+                Fecha = DateTime.Now
+            },
+            new Venta()
+            {
+                Id = 2,
+                FormaPago = FormaDePagoEnum.Tarjeta_Credito,
+                Iva = 10,
+                Total = 5000m,
+                ClienteId = 2,
+                Fecha = DateTime.Now
+            },
+            new Venta()
+            {
+                Id = 3,
+                FormaPago = FormaDePagoEnum.Tarjeta_Debito,
+                Iva = 21,
+                Total = 8000m,
+                ClienteId = 1,
+                Fecha = DateTime.Now
+            }
+        );
+
+        // Carga de datos semilla de Compras
         modelBuilder.Entity<Compra>().HasData(
             new Compra
             {
@@ -412,22 +274,35 @@ public partial class KioscoContext : DbContext
                 ProveedorId = 4
             }
         );
-        //carga de datos semilla de detalle compra
-        modelBuilder.Entity<DetallesCompra>().HasData(
-            new DetallesCompra { Id = 1, ProductoId = 1, PrecioUnitario = 2650, Cantidad = 1, CompraId = 1 },
-            new DetallesCompra { Id = 2, ProductoId = 2, PrecioUnitario = 2450, Cantidad = 2, CompraId = 2 },
-            new DetallesCompra { Id = 3, ProductoId = 3, PrecioUnitario = 2550, Cantidad = 1, CompraId = 3 }
-            );
 
-        //carga de datos semilla de detalle venta
-        modelBuilder.Entity<DetallesVenta>().HasData(
-            new DetallesVenta { Id = 1, VentaId = 1, ProductoId = 1, Cantidad = 1, PrecioUnitario = 2650 },
-            new DetallesVenta { Id = 2, VentaId = 2, ProductoId = 2, Cantidad = 2, PrecioUnitario = 2450 },
-            new DetallesVenta { Id = 3, VentaId = 3, ProductoId = 3, Cantidad = 1, PrecioUnitario = 2550 }
+        // Carga de datos semilla de DetallesCompras
+        modelBuilder.Entity<DetalleCompra>().HasData(
+        new DetalleCompra { Id = 1, ProductoId = 1, PrecioUnitario = 2650, Cantidad = 1, CompraId = 1 },
+        new DetalleCompra { Id = 2, ProductoId = 2, PrecioUnitario = 2450, Cantidad = 2, CompraId = 2 },
+        new DetalleCompra { Id = 3, ProductoId = 3, PrecioUnitario = 2550, Cantidad = 1, CompraId = 3 }
+        );
+
+        // Carga de datos semilla de DetallesVentas
+        modelBuilder.Entity<DetalleVenta>().HasData(
+            new DetalleVenta { Id = 1, VentaId = 1, ProductoId = 1, Cantidad = 1, PrecioUnitario = 2650 },
+            new DetalleVenta { Id = 2, VentaId = 2, ProductoId = 2, Cantidad = 2, PrecioUnitario = 2450 },
+            new DetalleVenta { Id = 3, VentaId = 3, ProductoId = 3, Cantidad = 1, PrecioUnitario = 2550 }
             );
         #endregion
-        OnModelCreatingPartial(modelBuilder);
-    }
 
-    partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+        #region definición de filtros de eliminación
+        // (este código no lo habilitamos todavía porque es cuando agregamos un campo Eliminado a las tablas y modificamos los
+        // ApiControllers para que al mandar a eliminar solo cambien este campo y lo pongan en verdadero, esta configuración de
+        // eliminación hace que el sistema ignore los registros que tengan el eliminado en verdadero, así que hace que en
+        // apariencia y funcionalidad esté "eliminado", pero van a seguir estando ahí para que podamos observar las eliminaciones que hubo)
+        modelBuilder.Entity<Cliente>().HasQueryFilter(m => !m.Eliminado);
+        modelBuilder.Entity<Compra>().HasQueryFilter(m => !m.Eliminado);
+        modelBuilder.Entity<DetalleCompra>().HasQueryFilter(m => !m.Eliminado);
+        modelBuilder.Entity<DetalleVenta>().HasQueryFilter(m => !m.Eliminado);
+        modelBuilder.Entity<Localidad>().HasQueryFilter(m => !m.Eliminado);
+        modelBuilder.Entity<Producto>().HasQueryFilter(m => !m.Eliminado);
+        modelBuilder.Entity<Proveedor>().HasQueryFilter(m => !m.Eliminado);
+        modelBuilder.Entity<Venta>().HasQueryFilter(m => !m.Eliminado);
+        #endregion
+    }
 }

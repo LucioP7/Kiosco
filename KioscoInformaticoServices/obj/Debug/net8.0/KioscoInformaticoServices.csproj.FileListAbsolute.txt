@@ -26,3 +26,17 @@ C:\Kiosco\KioscoInformaticoServices\obj\Debug\net8.0\KioscoInformaticoServices.d
 C:\Kiosco\KioscoInformaticoServices\obj\Debug\net8.0\refint\KioscoInformaticoServices.dll
 C:\Kiosco\KioscoInformaticoServices\obj\Debug\net8.0\KioscoInformaticoServices.pdb
 C:\Kiosco\KioscoInformaticoServices\obj\Debug\net8.0\ref\KioscoInformaticoServices.dll
+C:\TerceroLucio\TSDS\KioscoInformaticoServices\bin\Debug\net8.0\KioscoInformaticoServices.deps.json
+C:\TerceroLucio\TSDS\KioscoInformaticoServices\bin\Debug\net8.0\KioscoInformaticoServices.dll
+C:\TerceroLucio\TSDS\KioscoInformaticoServices\bin\Debug\net8.0\KioscoInformaticoServices.pdb
+C:\TerceroLucio\TSDS\KioscoInformaticoServices\obj\Debug\net8.0\KioscoInformaticoServices.Properties.Resources.resources
+C:\TerceroLucio\TSDS\KioscoInformaticoServices\obj\Debug\net8.0\KioscoInformaticoServices.csproj.GenerateResource.cache
+C:\TerceroLucio\TSDS\KioscoInformaticoServices\obj\Debug\net8.0\KioscoInformaticoServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\TerceroLucio\TSDS\KioscoInformaticoServices\obj\Debug\net8.0\KioscoInformaticoServices.AssemblyInfoInputs.cache
+C:\TerceroLucio\TSDS\KioscoInformaticoServices\obj\Debug\net8.0\KioscoInformaticoServices.AssemblyInfo.cs
+C:\TerceroLucio\TSDS\KioscoInformaticoServices\obj\Debug\net8.0\KioscoInformaticoServices.csproj.CoreCompileInputs.cache
+C:\TerceroLucio\TSDS\KioscoInformaticoServices\obj\Debug\net8.0\KioscoInformaticoServices.sourcelink.json
+C:\TerceroLucio\TSDS\KioscoInformaticoServices\obj\Debug\net8.0\KioscoInformaticoServices.dll
+C:\TerceroLucio\TSDS\KioscoInformaticoServices\obj\Debug\net8.0\refint\KioscoInformaticoServices.dll
+C:\TerceroLucio\TSDS\KioscoInformaticoServices\obj\Debug\net8.0\KioscoInformaticoServices.pdb
+C:\TerceroLucio\TSDS\KioscoInformaticoServices\obj\Debug\net8.0\ref\KioscoInformaticoServices.dll

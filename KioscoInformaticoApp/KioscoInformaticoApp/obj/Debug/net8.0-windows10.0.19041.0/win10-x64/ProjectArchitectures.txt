@@ -1,1 +1,1 @@
-C:\TerceroLucio\Kiosco\KioscoInformaticoApp\KioscoInformaticoApp\KioscoInformaticoApp.csproj;x64
+C:\TerceroLucio\TSDS\KioscoInformaticoApp\KioscoInformaticoApp\KioscoInformaticoApp.csproj;x64

@@ -572,3 +572,14 @@ C:\TerceroLucio\Kiosco\KioscoInformaticoBackend\obj\Debug\net8.0\ref\KioscoInfor
 C:\TerceroLucio\Kiosco\KioscoInformaticoBackend\bin\Debug\net8.0\KioscoInformaticoServices.dll
 C:\TerceroLucio\Kiosco\KioscoInformaticoBackend\bin\Debug\net8.0\KioscoInformaticoServices.pdb
 C:\TerceroLucio\Kiosco\KioscoInformaticoBackend\obj\Debug\net8.0\KioscoInformaticoBackend.sourcelink.json
+C:\TerceroLucio\TSDS\KioscoInformaticoBackend\obj\Debug\net8.0\KioscoInformaticoBackend.csproj.AssemblyReference.cache
+C:\TerceroLucio\TSDS\KioscoInformaticoBackend\obj\Debug\net8.0\KioscoInformaticoBackend.GeneratedMSBuildEditorConfig.editorconfig
+C:\TerceroLucio\TSDS\KioscoInformaticoBackend\obj\Debug\net8.0\KioscoInformaticoBackend.AssemblyInfoInputs.cache
+C:\TerceroLucio\TSDS\KioscoInformaticoBackend\obj\Debug\net8.0\KioscoInformaticoBackend.AssemblyInfo.cs
+C:\TerceroLucio\TSDS\KioscoInformaticoBackend\obj\Debug\net8.0\KioscoInformaticoBackend.csproj.CoreCompileInputs.cache
+C:\TerceroLucio\TSDS\KioscoInformaticoBackend\obj\Debug\net8.0\KioscoInformaticoBackend.MvcApplicationPartsAssemblyInfo.cs
+C:\TerceroLucio\TSDS\KioscoInformaticoBackend\obj\Debug\net8.0\KioscoInformaticoBackend.MvcApplicationPartsAssemblyInfo.cache
+C:\TerceroLucio\TSDS\KioscoInformaticoBackend\obj\Debug\net8.0\KioscoInformaticoBackend.sourcelink.json
+C:\TerceroLucio\TSDS\KioscoInformaticoBackend\obj\Debug\net8.0\KioscoInformaticoBackend.dll
+C:\TerceroLucio\TSDS\KioscoInformaticoBackend\obj\Debug\net8.0\refint\KioscoInformaticoBackend.dll
+C:\TerceroLucio\TSDS\KioscoInformaticoBackend\obj\Debug\net8.0\KioscoInformaticoBackend.pdb
