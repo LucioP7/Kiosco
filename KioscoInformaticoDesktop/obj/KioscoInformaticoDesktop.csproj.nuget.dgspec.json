@@ -58,6 +58,10 @@
               "target": "Package",
               "version": "[6.6.0, )"
             },
+            "Microsoft.CodeAnalysis": {
+              "target": "Package",
+              "version": "[4.11.0, )"
+            },
             "Microsoft.CodeAnalysis.Common": {
               "target": "Package",
               "version": "[4.11.0, )"

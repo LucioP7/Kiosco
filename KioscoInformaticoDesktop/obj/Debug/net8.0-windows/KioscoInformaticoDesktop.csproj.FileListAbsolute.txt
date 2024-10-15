@@ -657,3 +657,17 @@ C:\TerceroLucio\TSDS\KioscoInformaticoDesktop\obj\Debug\net8.0-windows\refint\Ki
 C:\TerceroLucio\TSDS\KioscoInformaticoDesktop\obj\Debug\net8.0-windows\KioscoInformaticoDesktop.pdb
 C:\TerceroLucio\TSDS\KioscoInformaticoDesktop\obj\Debug\net8.0-windows\KioscoInformaticoDesktop.genruntimeconfig.cache
 C:\TerceroLucio\TSDS\KioscoInformaticoDesktop\obj\Debug\net8.0-windows\ref\KioscoInformaticoDesktop.dll
+C:\TerceroLucio\TSDS\KioscoInformaticoDesktop\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+C:\TerceroLucio\TSDS\KioscoInformaticoDesktop\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\TerceroLucio\TSDS\KioscoInformaticoDesktop\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\TerceroLucio\TSDS\KioscoInformaticoDesktop\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\TerceroLucio\TSDS\KioscoInformaticoDesktop\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\TerceroLucio\TSDS\KioscoInformaticoDesktop\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\TerceroLucio\TSDS\KioscoInformaticoDesktop\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\TerceroLucio\TSDS\KioscoInformaticoDesktop\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\TerceroLucio\TSDS\KioscoInformaticoDesktop\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\TerceroLucio\TSDS\KioscoInformaticoDesktop\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\TerceroLucio\TSDS\KioscoInformaticoDesktop\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\TerceroLucio\TSDS\KioscoInformaticoDesktop\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\TerceroLucio\TSDS\KioscoInformaticoDesktop\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\TerceroLucio\TSDS\KioscoInformaticoDesktop\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll

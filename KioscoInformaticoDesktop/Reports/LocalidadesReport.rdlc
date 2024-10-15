@@ -33,7 +33,6 @@
                           </Paragraphs>
                           <rd:DefaultName>Id</rd:DefaultName>
                           <Top>0.07056cm</Top>
-                          <Left>0cm</Left>
                           <Height>0.6cm</Height>
                           <Width>2.5cm</Width>
                           <Style>
@@ -340,7 +339,7 @@
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>KioscoInformaticoDataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Dell2\Documents\Programacion2024\KioscoInformatico\KioscoInformaticoDesktop\DataSet\KioscoInformaticoDataSet.xsd</rd:SchemaPath>
+        <rd:SchemaPath>C:\TerceroLucio\TSDS\KioscoInformaticoDesktop\DataSet\KioscoInformaticoDataSet.xsd</rd:SchemaPath>
         <rd:TableName>DSLocalidades</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />

@@ -15,12 +15,11 @@ namespace KioscoInformaticoDesktop.ViewReports
 {
     public partial class LocalidadesViewReport : Form
     {
-        ReportViewer reporte;
+        ReportViewer reporte = new ReportViewer();
         ILocalidadService localidadService = new LocalidadService();
         public LocalidadesViewReport()
         {
             InitializeComponent();
-            reporte = new ReportViewer();
 
             reporte.Dock = DockStyle.Fill;
 
