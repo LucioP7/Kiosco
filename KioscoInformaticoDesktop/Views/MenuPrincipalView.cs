@@ -1,3 +1,4 @@
+using KioscoInformaticoDesktop.ViewReports;
 using KioscoInformaticoDesktop.Views;
 
 namespace KioscoInformaticoDesktop
@@ -9,27 +10,39 @@ namespace KioscoInformaticoDesktop
             InitializeComponent();
         }
 
-        private void ItemMEnuSalirDelSistema_Click(object sender, EventArgs e)
+        private void menuItemSalirDelSistema_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
-        private void ItemMenuLocalidades_Click(object sender, EventArgs e)
+        private void menuItemLocalidades_Click(object sender, EventArgs e)
         {
             LocalidadesView localidadesView = new LocalidadesView();
-            localidadesView.Show();
+            localidadesView.ShowDialog();
         }
 
-        private void iconMenuItem2_Click(object sender, EventArgs e)
+        private void menuItemProductos_Click(object sender, EventArgs e)
         {
             ProductosView productosView = new ProductosView();
-            productosView.Show();
+            productosView.ShowDialog();
         }
 
-        private void iconMenuItem3_Click(object sender, EventArgs e)
+        private void iconMenuClientes_Click(object sender, EventArgs e)
         {
             ClientesView clientesView = new ClientesView();
-            clientesView.Show();
+            clientesView.ShowDialog();
+        }
+
+        private void iconMenuProveedores_Click(object sender, EventArgs e)
+        {
+            ProveedoresView proveedoresView = new ProveedoresView();
+            proveedoresView.ShowDialog();
+        }
+
+        private void iconMenuItem5_Click(object sender, EventArgs e)
+        {
+            LocalidadesViewReport localidadesViewReport = new LocalidadesViewReport();
+            localidadesViewReport.ShowDialog();
         }
     }
 }

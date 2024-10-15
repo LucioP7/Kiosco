@@ -1,0 +1,60 @@
+﻿@page "/editarcliente"
+@inject IClienteService ClienteService
+@inject NavigationManager NavigationManager
+
+<HeaderPage TitlePage="Editando cliente" />
+
+@if (cliente != null)
+{
+    <EditForm Model="cliente" OnValidSubmit="Guardar">
+        <DataAnnotationsValidator />
+
+        <div class="form-group">
+            <label for="Nombre">Nombre</label>
+            <InputText id="Nombre" class="form-control" @bind-Value="cliente.Nombre" />
+        </div>
+
+        <div class="form-group">
+            <label for="Direccion">Dirección</label>
+            <InputText id="Direccion" class="form-control" @bind-Value="cliente.Direccion" />
+        </div>
+
+        <div class="form-group">
+            <label for="Telefonos">Teléfonos</label>
+            <InputText id="Telefonos" class="form-control" @bind-Value="cliente.Telefonos" />
+        </div>
+
+        <div class="form-group">
+            <label for="FechaNacimiento">Fecha de nacimiento</label>
+            <InputDate id="FechaNacimiento" class="form-control" @bind-Value="cliente.FechaNacimiento" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <button class="btn btn-primary mb-2" type="button" @onclick="@(()=>NavigationManager.NavigateTo("/clientes"))">Volver a la lista</button>
+        <ValidationSummary />
+    </EditForm>
+}
+else
+{
+    <p><em>Obteniendo el producto a editar...</em></p>
+}
+
+
+@code {
+    [SupplyParameterFromQuery]
+    [Parameter]
+    public int IdClienteEditado { get; set; }
+
+    private Cliente? cliente;
+
+    protected override async Task OnInitializedAsync()
+    {
+        cliente = await ClienteService.GetByIdAsync(IdClienteEditado);
+    }
+
+    private async void Guardar()
+    {
+        await ClienteService.UpdateAsync(cliente);
+        NavigationManager.NavigateTo("/clientes");
+    }
+}

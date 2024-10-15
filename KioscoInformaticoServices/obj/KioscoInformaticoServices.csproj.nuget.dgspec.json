@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj": {}
+    "C:\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj": {}
   },
   "projects": {
-    "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj": {
+    "C:\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj",
+        "projectUniqueName": "C:\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj",
         "projectName": "KioscoInformaticoServices",
-        "projectPath": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj",
-        "packagesPath": "C:\\Users\\Dell14\\.nuget\\packages\\",
-        "outputPath": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\obj\\",
+        "projectPath": "C:\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj",
+        "packagesPath": "C:\\Users\\Estudiante\\.nuget\\packages\\",
+        "outputPath": "C:\\Kiosco\\KioscoInformaticoServices\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dell14\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Estudiante\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

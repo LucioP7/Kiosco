@@ -1,7 +1,12 @@
-﻿using KioscoInformaticoBackend.DataContext;
-using KioscoInformaticoServices.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using KioscoInformaticoBackend.DataContext;
+using KioscoInformaticoServices.Models;
 
 namespace KioscoInformaticoBackend.Controllers
 {
@@ -20,7 +25,7 @@ namespace KioscoInformaticoBackend.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Localidad>>> GetLocalidades([FromQuery] string? filtro)
         {
-            if (filtro != null)
+            if(filtro != null)
             {
                 return await _context.Localidades.Where(l => l.Nombre.ToUpper().Contains(filtro.ToUpper())).ToListAsync();
             }
@@ -93,7 +98,8 @@ namespace KioscoInformaticoBackend.Controllers
                 return NotFound();
             }
 
-            _context.Localidades.Remove(localidad);
+            localidad.Eliminado = true;
+            _context.Localidades.Update(localidad);
             await _context.SaveChangesAsync();
 
             return NoContent();

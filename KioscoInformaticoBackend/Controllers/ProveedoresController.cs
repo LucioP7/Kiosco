@@ -1,7 +1,12 @@
-﻿using KioscoInformaticoBackend.DataContext;
-using KioscoInformaticoServices.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using KioscoInformaticoBackend.DataContext;
+using KioscoInformaticoServices.Models;
 
 namespace KioscoInformaticoBackend.Controllers
 {
@@ -18,9 +23,15 @@ namespace KioscoInformaticoBackend.Controllers
 
         // GET: api/Proveedores
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Proveedor>>> GetProveedores()
+        public async Task<ActionResult<IEnumerable<Proveedor>>> GetProveedores([FromQuery] string? filtro)
         {
-            return await _context.Proveedores.ToListAsync();
+            if (filtro != null)
+            {
+                return await _context.Proveedores.Include(p => p.Localidad)
+                                              .Where(p => p.Nombre.ToUpper().Contains(filtro.ToUpper()))
+                                              .ToListAsync();
+            }
+            return await _context.Proveedores.Include(p => p.Localidad).ToListAsync();
         }
 
         // GET: api/Proveedores/5
@@ -89,7 +100,8 @@ namespace KioscoInformaticoBackend.Controllers
                 return NotFound();
             }
 
-            _context.Proveedores.Remove(proveedor);
+            proveedor.Eliminado = true;
+            _context.Proveedores.Update(proveedor);
             await _context.SaveChangesAsync();
 
             return NoContent();

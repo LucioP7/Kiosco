@@ -1,7 +1,12 @@
-﻿using KioscoInformaticoBackend.DataContext;
-using KioscoInformaticoServices.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using KioscoInformaticoBackend.DataContext;
+using KioscoInformaticoServices.Models;
 
 namespace KioscoInformaticoBackend.Controllers
 {
@@ -35,6 +40,13 @@ namespace KioscoInformaticoBackend.Controllers
             }
 
             return producto;
+        }
+
+        // creamos un metodo get para obtener los productos que estan en oferta
+        [HttpGet("getInOffer")]
+        public async Task<ActionResult<IEnumerable<Producto>>> GetProductosInOffer()
+        {
+            return await _context.Productos.Where(p => p.Oferta).ToListAsync();
         }
 
         // PUT: api/Productos/5
@@ -89,7 +101,8 @@ namespace KioscoInformaticoBackend.Controllers
                 return NotFound();
             }
 
-            _context.Productos.Remove(producto);
+            producto.Eliminado = true;
+            _context.Productos.Update(producto);
             await _context.SaveChangesAsync();
 
             return NoContent();

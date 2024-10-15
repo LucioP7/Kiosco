@@ -42,7 +42,7 @@
             txtBuscar = new TextBox();
             label4 = new Label();
             tabPageAgregarEditar = new TabPage();
-            comboBoxLocalidad = new ComboBox();
+            cboLocalidades = new ComboBox();
             dateTimeNacimiento = new DateTimePicker();
             label7 = new Label();
             txtTelefonos = new TextBox();
@@ -134,7 +134,7 @@
             btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnBuscar.IconSize = 35;
             btnBuscar.ImageAlign = ContentAlignment.MiddleLeft;
-            btnBuscar.Location = new Point(770, 64);
+            btnBuscar.Location = new Point(773, 64);
             btnBuscar.Name = "btnBuscar";
             btnBuscar.Size = new Size(125, 61);
             btnBuscar.TabIndex = 30;
@@ -207,12 +207,11 @@
             dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.False;
             dataGridClientes.DefaultCellStyle = dataGridViewCellStyle1;
-            dataGridClientes.Location = new Point(3, 64);
+            dataGridClientes.Location = new Point(0, 64);
             dataGridClientes.Name = "dataGridClientes";
             dataGridClientes.ReadOnly = true;
             dataGridClientes.RowHeadersWidth = 51;
-            dataGridClientes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridClientes.Size = new Size(762, 383);
+            dataGridClientes.Size = new Size(762, 445);
             dataGridClientes.TabIndex = 26;
             // 
             // txtBuscar
@@ -234,7 +233,7 @@
             // 
             // tabPageAgregarEditar
             // 
-            tabPageAgregarEditar.Controls.Add(comboBoxLocalidad);
+            tabPageAgregarEditar.Controls.Add(cboLocalidades);
             tabPageAgregarEditar.Controls.Add(dateTimeNacimiento);
             tabPageAgregarEditar.Controls.Add(label7);
             tabPageAgregarEditar.Controls.Add(txtTelefonos);
@@ -255,20 +254,20 @@
             tabPageAgregarEditar.Text = "Agregar/Editar";
             tabPageAgregarEditar.UseVisualStyleBackColor = true;
             // 
-            // comboBoxLocalidad
+            // cboLocalidades
             // 
-            comboBoxLocalidad.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxLocalidad.FormattingEnabled = true;
-            comboBoxLocalidad.Location = new Point(345, 284);
-            comboBoxLocalidad.Margin = new Padding(3, 4, 3, 4);
-            comboBoxLocalidad.Name = "comboBoxLocalidad";
-            comboBoxLocalidad.Size = new Size(260, 28);
-            comboBoxLocalidad.TabIndex = 4;
+            cboLocalidades.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboLocalidades.FormattingEnabled = true;
+            cboLocalidades.Location = new Point(345, 284);
+            cboLocalidades.Margin = new Padding(3, 4, 3, 4);
+            cboLocalidades.Name = "cboLocalidades";
+            cboLocalidades.Size = new Size(260, 28);
+            cboLocalidades.TabIndex = 4;
             // 
             // dateTimeNacimiento
             // 
             dateTimeNacimiento.Format = DateTimePickerFormat.Short;
-            dateTimeNacimiento.Location = new Point(356, 240);
+            dateTimeNacimiento.Location = new Point(345, 235);
             dateTimeNacimiento.Margin = new Padding(3, 4, 3, 4);
             dateTimeNacimiento.Name = "dateTimeNacimiento";
             dateTimeNacimiento.Size = new Size(260, 27);
@@ -349,7 +348,7 @@
             btnGuardar.Location = new Point(270, 347);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(183, 37);
-            btnGuardar.TabIndex = 5;
+            btnGuardar.TabIndex = 16;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
             btnGuardar.Click += btnGuardar_Click;
@@ -418,6 +417,6 @@
         private Label label3;
         private Label label7;
         private DateTimePicker dateTimeNacimiento;
-        private ComboBox comboBoxLocalidad;
+        private ComboBox cboLocalidades;
     }
 }

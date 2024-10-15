@@ -1,8 +1,12 @@
-﻿using KioscoInformaticoBackend.DataContext;
-using KioscoInformaticoServices.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis.Elfie.Serialization;
 using Microsoft.EntityFrameworkCore;
+using KioscoInformaticoBackend.DataContext;
+using KioscoInformaticoServices.Models;
 
 namespace KioscoInformaticoBackend.Controllers
 {
@@ -23,9 +27,11 @@ namespace KioscoInformaticoBackend.Controllers
         {
             if (filtro != null)
             {
-                return await _context.Clientes.Include(c => c.Localidad).Where(c => c.Nombre.ToUpper().Contains(filtro.ToUpper())).ToListAsync();
+                return await _context.Clientes.Include(c=>c.Localidad)
+                                              .Where(c => c.Nombre.ToUpper().Contains(filtro.ToUpper()))
+                                              .ToListAsync();
             }
-            return await _context.Clientes.Include(c => c.Localidad).ToListAsync();
+            return await _context.Clientes.Include(c=>c.Localidad).ToListAsync();
         }
 
         // GET: api/Clientes/5
@@ -94,7 +100,8 @@ namespace KioscoInformaticoBackend.Controllers
                 return NotFound();
             }
 
-            _context.Clientes.Remove(cliente);
+            cliente.Eliminado = true;
+            _context.Clientes.Update(cliente);
             await _context.SaveChangesAsync();
 
             return NoContent();

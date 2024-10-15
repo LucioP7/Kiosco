@@ -1,44 +1,49 @@
-﻿using KioscoInformaticoServices.Models;
+﻿using KioscoInformaticoServices.Interfaces;
+using KioscoInformaticoServices.Models;
 using KioscoInformaticoServices.Services;
-using KioscoInformaticoServices.Interfaces;
-using System.Runtime.CompilerServices;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace KioscoInformaticoDesktop.Views
 {
     public partial class ProductosView : Form
     {
         IGenericService<Producto> productoService = new GenericService<Producto>();
-        BindingSource listaproductos = new BindingSource();
-        List<Producto> ListaFiltro = new List<Producto>();
-        Producto productoCurrent;
 
+        BindingSource listaProductos = new BindingSource();
+        List<Producto> listaAFiltrar = new List<Producto>();
+
+        Producto productoCurrent;
         public ProductosView()
         {
             InitializeComponent();
-            DataGridProductos.DataSource = listaproductos;
+            dataGridProductos.DataSource = listaProductos;
             CargarGrilla();
         }
 
         private async Task CargarGrilla()
         {
-            listaproductos.DataSource = await productoService.GetAllAsync();
-            DataGridProductos.Columns["Id"].DefaultCellStyle.Format = "N0";
-            ListaFiltro = (List<Producto>)listaproductos.DataSource;
+            listaProductos.DataSource = await productoService.GetAllAsync();
+            listaAFiltrar = (List<Producto>)listaProductos.DataSource;
         }
-
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            tabControl.SelectedTab = tabPageAgregarEditar;
+            tabControl1.SelectedTab = tabPageAgregarEditar;
         }
 
-        private async void BtnGuardar_Click(object sender, EventArgs e)
+        private async void btnGuardar_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtNombre.Text))
             {
-
-                MessageBox.Show("Debe ingresar un nombre de producto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+                MessageBox.Show("El nombre es requerido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -48,7 +53,6 @@ namespace KioscoInformaticoDesktop.Views
                 productoCurrent.Precio = numericPrecio.Value;
                 await productoService.UpdateAsync(productoCurrent);
                 productoCurrent = null;
-
             }
             else
             {
@@ -57,29 +61,24 @@ namespace KioscoInformaticoDesktop.Views
                     Nombre = txtNombre.Text,
                     Precio = numericPrecio.Value
                 };
-
                 await productoService.AddAsync(producto);
             }
-
             await CargarGrilla();
             txtNombre.Text = string.Empty;
             numericPrecio.Value = 0;
-            tabControl.SelectedTab = tabLista;
+            tabControl1.SelectedTab = tabPageLista;
         }
 
-
-        private void btnEditar_Click(object sender, EventArgs e)
+        private void btnModificar_Click(object sender, EventArgs e)
         {
-            productoCurrent = (Producto)listaproductos.Current;
+            productoCurrent = (Producto)listaProductos.Current;
             txtNombre.Text = productoCurrent.Nombre;
-            numericPrecio.Value = productoCurrent.Precio;
-
-            tabControl.SelectTab(tabPageAgregarEditar);
+            tabControl1.SelectedTab = tabPageAgregarEditar;
         }
 
         private async void btnEliminar_Click(object sender, EventArgs e)
         {
-            productoCurrent = (Producto)listaproductos.Current;
+            productoCurrent = (Producto)listaProductos.Current;
             DialogResult respuesta = MessageBox.Show($"Está seguro que quiere eliminar el producto {productoCurrent.Nombre}?",
                                    "Eliminar producto",
                                    MessageBoxButtons.YesNo,
@@ -93,9 +92,20 @@ namespace KioscoInformaticoDesktop.Views
             }
         }
 
-        private void BtnCancelar_Click(object sender, EventArgs e)
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            FiltrarProductos();
+        }
+
+        private void FiltrarProductos()
+        {
+            var productosFlitrados = listaAFiltrar.Where(p => p.Nombre.ToUpper().Contains(txtBuscar.Text.ToUpper())).ToList();
+            listaProductos.DataSource = productosFlitrados;
+        }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            FiltrarProductos();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -103,21 +113,12 @@ namespace KioscoInformaticoDesktop.Views
             this.Close();
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
-            FiltrarProductos();
-        }
-
-        private async void FiltrarProductos()
-        {
-            var productosFiltrados = ListaFiltro.Where(p => p.Nombre.Contains(txtFiltro.Text)).ToList();
-            listaproductos.DataSource = productosFiltrados;
-
-        }
-
-        private void txtFiltro_TextChanged(object sender, EventArgs e)
-        {
-            FiltrarProductos();
+            productoCurrent = null;
+            txtNombre.Text = string.Empty;
+            numericPrecio.Value = 0;
+            tabControl1.SelectedTab = tabPageLista;
         }
     }
 }

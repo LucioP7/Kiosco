@@ -1,39 +1,47 @@
 ﻿using KioscoInformaticoServices.Models;
 using KioscoInformaticoServices.Services;
 using KioscoInformaticoServices.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace KioscoInformaticoDesktop.Views
 {
     public partial class LocalidadesView : Form
     {
         ILocalidadService localidadService = new LocalidadService();
-        BindingSource listalocalidades = new BindingSource();
-        Localidad localidadCurrent;
 
+        BindingSource listaLocalidades = new BindingSource();
+
+        Localidad localidadCurrent;
         public LocalidadesView()
         {
             InitializeComponent();
-            DataGridLocalidades.DataSource = listalocalidades;
+            dataGridLocalidades.DataSource = listaLocalidades;
             CargarGrilla();
         }
 
         private async Task CargarGrilla()
         {
-            listalocalidades.DataSource = await localidadService.GetAllAsync();
+            listaLocalidades.DataSource = await localidadService.GetAllAsync();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            tabControl.SelectTab(tabPageAgregarEditar);
+            tabControl1.SelectedTab = tabPageAgregarEditar;
         }
 
-        private async void BtnGuardar_Click(object sender, EventArgs e)
+        private async void btnGuardar_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtNombre.Text))
             {
-
-                MessageBox.Show("Debe ingresar un nombre", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+                MessageBox.Show("El nombre es requerido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -42,54 +50,51 @@ namespace KioscoInformaticoDesktop.Views
                 localidadCurrent.Nombre = txtNombre.Text;
                 await localidadService.UpdateAsync(localidadCurrent);
                 localidadCurrent = null;
-
             }
             else
             {
-                var localidad = new Localidad
+                Localidad localidad = new Localidad()
                 {
                     Nombre = txtNombre.Text
                 };
-
                 await localidadService.AddAsync(localidad);
             }
-
             await CargarGrilla();
             txtNombre.Text = string.Empty;
-            tabControl.SelectTab(tabLista);
-
+            tabControl1.SelectedTab = tabPageLista;
         }
 
-        private void btnEditar_Click(object sender, EventArgs e)
+        private void btnModificar_Click(object sender, EventArgs e)
         {
-            localidadCurrent = (Localidad)listalocalidades.Current;
+            localidadCurrent = (Localidad)listaLocalidades.Current;
             txtNombre.Text = localidadCurrent.Nombre;
-            tabControl.SelectTab(tabPageAgregarEditar);
+            tabControl1.SelectedTab = tabPageAgregarEditar;
         }
 
         private async void btnEliminar_Click(object sender, EventArgs e)
         {
-            localidadCurrent = (Localidad)listalocalidades.Current;
-            var result = MessageBox.Show($"¿Está seguro que desea eliminar la localidad {localidadCurrent.Nombre}?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
+            localidadCurrent = (Localidad)listaLocalidades.Current;
+            DialogResult respuesta = MessageBox.Show($"Está seguro que quiere eliminar la localidad {localidadCurrent.Nombre}?",
+                                   "Eliminar localidad",
+                                   MessageBoxButtons.YesNo,
+                                   MessageBoxIcon.Question);
+
+            if (respuesta == DialogResult.Yes)
             {
-
                 await localidadService.DeleteAsync(localidadCurrent.Id);
-                CargarGrilla();
+                localidadCurrent = null;
+                await CargarGrilla();
             }
-            localidadCurrent = null;
         }
 
-        private void BtnCancelar_Click(object sender, EventArgs e)
+        private async void FiltrarLocalidades()
         {
-            localidadCurrent = null;
-            txtNombre.Text = string.Empty;
-            tabControl.SelectTab(tabLista);
+            listaLocalidades.DataSource = await localidadService.GetAllAsync(txtBuscar.Text);
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
-            this.Close();
+            //FiltrarLocalidades();
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -97,14 +102,16 @@ namespace KioscoInformaticoDesktop.Views
             FiltrarLocalidades();
         }
 
-        private async void FiltrarLocalidades()
+        private void btnSalir_Click(object sender, EventArgs e)
         {
-            listalocalidades.DataSource = await localidadService.GetAllAsync(txtFiltro.Text);
+            this.Close();
         }
 
-        private void txtFiltro_TextChanged(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
-            //FiltrarLocalidades();
+            localidadCurrent = null;
+            txtNombre.Text = string.Empty;
+            tabControl1.SelectedTab = tabPageLista;
         }
     }
 }

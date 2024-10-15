@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="ViewReports\LocalidadesViewReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\ClientesView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -13,9 +16,12 @@
     <Compile Update="Views\ProductosView.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\ProveedoresView.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Update="DataContext\KioscoInformaticoDataSet.xsd">
+    <None Update="DataSet\KioscoInformaticoDataSet.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

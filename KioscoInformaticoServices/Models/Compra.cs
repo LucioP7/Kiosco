@@ -1,4 +1,6 @@
 ﻿using KioscoInformaticoServices.Enums;
+using System;
+using System.Collections.Generic;
 
 namespace KioscoInformaticoServices.Models;
 
@@ -15,8 +17,6 @@ public partial class Compra
     public DateTime Fecha { get; set; }
 
     public int? ProveedorId { get; set; }
-
     public virtual Proveedor? Proveedor { get; set; }
-
-    public virtual ICollection<DetallesCompra> DetallesCompras { get; set; } = new List<DetallesCompra>();
+    public bool Eliminado { get; set; } = false;
 }

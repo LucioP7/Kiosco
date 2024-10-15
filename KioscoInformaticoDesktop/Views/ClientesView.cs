@@ -1,5 +1,4 @@
-﻿using FontAwesome.Sharp;
-using KioscoInformaticoServices.Interfaces;
+﻿using KioscoInformaticoServices.Interfaces;
 using KioscoInformaticoServices.Models;
 using KioscoInformaticoServices.Services;
 using System;
@@ -12,7 +11,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace KioscoInformaticoDesktop.Views
 {
@@ -30,19 +28,19 @@ namespace KioscoInformaticoDesktop.Views
             CargarGrilla();
             CargarCombo();
         }
-        private async Task CargarGrilla()
-        {
-            listaClientes.DataSource = await clienteService.GetAllAsync();
-            listaAFiltrar = (List<Cliente>)listaClientes.DataSource;
-            dataGridClientes.Columns["LocalidadId"].Visible = false;
-        }
-        
+
         private async Task CargarCombo()
         {
-            comboBoxLocalidad.DataSource = await localidadService.GetAllAsync();
-            comboBoxLocalidad.DisplayMember = "Nombre";
-            comboBoxLocalidad.ValueMember = "Id";
-            comboBoxLocalidad.SelectedIndex = -1;
+            cboLocalidades.DataSource = await localidadService.GetAllAsync();
+            cboLocalidades.DisplayMember = "Nombre";
+            cboLocalidades.ValueMember = "Id";
+        }
+
+        private async Task CargarGrilla()
+        {
+            listaClientes.DataSource = await clienteService.GetAllAsync(null);
+            listaAFiltrar = (List<Cliente>)listaClientes.DataSource;
+            dataGridClientes.Columns["LocalidadId"].Visible = false;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -64,7 +62,7 @@ namespace KioscoInformaticoDesktop.Views
                 clienteCurrent.Direccion = txtDireccion.Text;
                 clienteCurrent.Telefonos = txtTelefonos.Text;
                 clienteCurrent.FechaNacimiento = dateTimeNacimiento.Value;
-                clienteCurrent.LocalidadId = (int?)comboBoxLocalidad.SelectedValue;
+                clienteCurrent.LocalidadId = (int?)cboLocalidades.SelectedValue;
                 await clienteService.UpdateAsync(clienteCurrent);
                 clienteCurrent = null;
             }
@@ -76,7 +74,7 @@ namespace KioscoInformaticoDesktop.Views
                     Direccion = txtDireccion.Text,
                     Telefonos = txtTelefonos.Text,
                     FechaNacimiento = dateTimeNacimiento.Value,
-                    LocalidadId = (int?)comboBoxLocalidad.SelectedValue
+                    LocalidadId = (int?)cboLocalidades.SelectedValue
                 };
                 await clienteService.AddAsync(cliente);
             }
@@ -85,7 +83,6 @@ namespace KioscoInformaticoDesktop.Views
             txtDireccion.Text = string.Empty;
             txtTelefonos.Text = string.Empty;
             dateTimeNacimiento.Value = DateTime.Now;
-            comboBoxLocalidad.SelectedIndex = -1;
             tabControlLista.SelectedTab = tabPageLista;
         }
 
@@ -96,7 +93,7 @@ namespace KioscoInformaticoDesktop.Views
             txtDireccion.Text = clienteCurrent.Direccion;
             txtTelefonos.Text = clienteCurrent.Telefonos;
             dateTimeNacimiento.Value = clienteCurrent.FechaNacimiento;
-            comboBoxLocalidad.SelectedValue = clienteCurrent.LocalidadId;
+            cboLocalidades.SelectedValue = clienteCurrent.LocalidadId;
             tabControlLista.SelectedTab = tabPageAgregarEditar;
         }
 
@@ -139,11 +136,11 @@ namespace KioscoInformaticoDesktop.Views
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            clienteCurrent = null;
             txtNombre.Text = string.Empty;
             txtDireccion.Text = string.Empty;
             txtTelefonos.Text = string.Empty;
             dateTimeNacimiento.Value = DateTime.Now;
-            comboBoxLocalidad.SelectedIndex = -1;
             tabControlLista.SelectedTab = tabPageLista;
         }
     }

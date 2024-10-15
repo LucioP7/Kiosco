@@ -1,7 +1,12 @@
-﻿using KioscoInformaticoBackend.DataContext;
-using KioscoInformaticoServices.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using KioscoInformaticoBackend.DataContext;
+using KioscoInformaticoServices.Models;
 
 namespace KioscoInformaticoBackend.Controllers
 {
@@ -18,36 +23,36 @@ namespace KioscoInformaticoBackend.Controllers
 
         // GET: api/DetallesVentas
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<DetallesVenta>>> GetDetallesVentas()
+        public async Task<ActionResult<IEnumerable<DetalleVenta>>> GetDetallesventas()
         {
-            return await _context.DetallesVentas.ToListAsync();
+            return await _context.Detallesventas.ToListAsync();
         }
 
         // GET: api/DetallesVentas/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<DetallesVenta>> GetDetallesVenta(int id)
+        public async Task<ActionResult<DetalleVenta>> GetDetalleVenta(int id)
         {
-            var detallesVenta = await _context.DetallesVentas.FindAsync(id);
+            var detalleVenta = await _context.Detallesventas.FindAsync(id);
 
-            if (detallesVenta == null)
+            if (detalleVenta == null)
             {
                 return NotFound();
             }
 
-            return detallesVenta;
+            return detalleVenta;
         }
 
         // PUT: api/DetallesVentas/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutDetallesVenta(int id, DetallesVenta detallesVenta)
+        public async Task<IActionResult> PutDetalleVenta(int id, DetalleVenta detalleVenta)
         {
-            if (id != detallesVenta.Id)
+            if (id != detalleVenta.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(detallesVenta).State = EntityState.Modified;
+            _context.Entry(detalleVenta).State = EntityState.Modified;
 
             try
             {
@@ -55,7 +60,7 @@ namespace KioscoInformaticoBackend.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!DetallesVentaExists(id))
+                if (!DetalleVentaExists(id))
                 {
                     return NotFound();
                 }
@@ -71,33 +76,34 @@ namespace KioscoInformaticoBackend.Controllers
         // POST: api/DetallesVentas
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<DetallesVenta>> PostDetallesVenta(DetallesVenta detallesVenta)
+        public async Task<ActionResult<DetalleVenta>> PostDetalleVenta(DetalleVenta detalleVenta)
         {
-            _context.DetallesVentas.Add(detallesVenta);
+            _context.Detallesventas.Add(detalleVenta);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetDetallesVenta", new { id = detallesVenta.Id }, detallesVenta);
+            return CreatedAtAction("GetDetalleVenta", new { id = detalleVenta.Id }, detalleVenta);
         }
 
         // DELETE: api/DetallesVentas/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteDetallesVenta(int id)
+        public async Task<IActionResult> DeleteDetalleVenta(int id)
         {
-            var detallesVenta = await _context.DetallesVentas.FindAsync(id);
-            if (detallesVenta == null)
+            var detalleVenta = await _context.Detallesventas.FindAsync(id);
+            if (detalleVenta == null)
             {
                 return NotFound();
             }
 
-            _context.DetallesVentas.Remove(detallesVenta);
+            detalleVenta.Eliminado = true;
+            _context.Detallesventas.Update(detalleVenta);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool DetallesVentaExists(int id)
+        private bool DetalleVentaExists(int id)
         {
-            return _context.DetallesVentas.Any(e => e.Id == id);
+            return _context.Detallesventas.Any(e => e.Id == id);
         }
     }
 }

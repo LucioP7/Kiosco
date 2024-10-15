@@ -1,7 +1,12 @@
-﻿using KioscoInformaticoBackend.DataContext;
-using KioscoInformaticoServices.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using KioscoInformaticoBackend.DataContext;
+using KioscoInformaticoServices.Models;
 
 namespace KioscoInformaticoBackend.Controllers
 {
@@ -89,7 +94,8 @@ namespace KioscoInformaticoBackend.Controllers
                 return NotFound();
             }
 
-            _context.Ventas.Remove(venta);
+            venta.Eliminado = true;
+            _context.Ventas.Update(venta);
             await _context.SaveChangesAsync();
 
             return NoContent();
