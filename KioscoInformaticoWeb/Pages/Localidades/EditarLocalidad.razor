@@ -8,7 +8,6 @@
 {
     <EditForm Model="localidad" OnValidSubmit="Guardar">
         <DataAnnotationsValidator />
-
         <div class="form-group">
             <label for="Nombre">Nombre</label>
             <InputText id="Nombre" class="form-control" @bind-Value="localidad.Nombre" />

@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "C:\\TerceroLucio\\TSDS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DB0EA8D0-35D4-40A1-98B5-A20BDE5EAD8A}|KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj|c:\\tercerolucio\\tsds\\kioscoinformaticodesktop\\views\\menuprincipalview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB0EA8D0-35D4-40A1-98B5-A20BDE5EAD8A}|KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj|solutionrelative:kioscoinformaticodesktop\\views\\menuprincipalview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB86B920-E6C9-44AD-B7ED-488F102B3DDB}|KioscoInformaticoWeb\\KioscoInformaticoWeb.csproj|c:\\tercerolucio\\tsds\\kioscoinformaticoweb\\pages\\localidades\\editarlocalidad.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB86B920-E6C9-44AD-B7ED-488F102B3DDB}|KioscoInformaticoWeb\\KioscoInformaticoWeb.csproj|solutionrelative:kioscoinformaticoweb\\pages\\localidades\\editarlocalidad.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB0EA8D0-35D4-40A1-98B5-A20BDE5EAD8A}|KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj|c:\\tercerolucio\\tsds\\kioscoinformaticodesktop\\views\\menuprincipalview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DB0EA8D0-35D4-40A1-98B5-A20BDE5EAD8A}|KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj|solutionrelative:kioscoinformaticodesktop\\views\\menuprincipalview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1876C8F-E1E9-4082-BE26-CA355B45F7D4}|KioscoInformaticoBackend\\KioscoInformaticoBackend.csproj|c:\\tercerolucio\\tsds\\kioscoinformaticobackend\\controllers\\proveedorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1876C8F-E1E9-4082-BE26-CA355B45F7D4}|KioscoInformaticoBackend\\KioscoInformaticoBackend.csproj|solutionrelative:kioscoinformaticobackend\\controllers\\proveedorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB31FCDB-4FE2-4451-AF0D-F5E34A36D672}|KioscoInformaticoServices\\KioscoInformaticoServices.csproj|c:\\tercerolucio\\tsds\\kioscoinformaticoservices\\enums\\formadepagoenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB31FCDB-4FE2-4451-AF0D-F5E34A36D672}|KioscoInformaticoServices\\KioscoInformaticoServices.csproj|solutionrelative:kioscoinformaticoservices\\enums\\formadepagoenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB31FCDB-4FE2-4451-AF0D-F5E34A36D672}|KioscoInformaticoServices\\KioscoInformaticoServices.csproj|c:\\tercerolucio\\tsds\\kioscoinformaticoservices\\enums\\condicionivaenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB31FCDB-4FE2-4451-AF0D-F5E34A36D672}|KioscoInformaticoServices\\KioscoInformaticoServices.csproj|solutionrelative:kioscoinformaticoservices\\enums\\condicionivaenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB86B920-E6C9-44AD-B7ED-488F102B3DDB}|KioscoInformaticoWeb\\KioscoInformaticoWeb.csproj|c:\\tercerolucio\\tsds\\kioscoinformaticoweb\\pages\\clientes\\agregarcliente.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB86B920-E6C9-44AD-B7ED-488F102B3DDB}|KioscoInformaticoWeb\\KioscoInformaticoWeb.csproj|solutionrelative:kioscoinformaticoweb\\pages\\clientes\\agregarcliente.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DB0EA8D0-35D4-40A1-98B5-A20BDE5EAD8A}|KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj|c:\\tercerolucio\\tsds\\kioscoinformaticodesktop\\viewreports\\localidadesviewreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DB0EA8D0-35D4-40A1-98B5-A20BDE5EAD8A}|KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj|solutionrelative:kioscoinformaticodesktop\\viewreports\\localidadesviewreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB0EA8D0-35D4-40A1-98B5-A20BDE5EAD8A}|KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj|c:\\tercerolucio\\tsds\\kioscoinformaticodesktop\\viewreports\\localidadesviewreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DB0EA8D0-35D4-40A1-98B5-A20BDE5EAD8A}|KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj|C:\\TerceroLucio\\TSDS\\kioscoinformaticodesktop\\viewreports\\localidadesviewreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DB0EA8D0-35D4-40A1-98B5-A20BDE5EAD8A}|KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj|solutionrelative:kioscoinformaticodesktop\\viewreports\\localidadesviewreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB0EA8D0-35D4-40A1-98B5-A20BDE5EAD8A}|KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj|c:\\tercerolucio\\tsds\\kioscoinformaticodesktop\\dataset\\kioscoinformaticodataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
-      "RelativeMoniker": "D:0:0:{DB0EA8D0-35D4-40A1-98B5-A20BDE5EAD8A}|KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj|solutionrelative:kioscoinformaticodesktop\\dataset\\kioscoinformaticodataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DB0EA8D0-35D4-40A1-98B5-A20BDE5EAD8A}|KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj|c:\\tercerolucio\\tsds\\kioscoinformaticodesktop\\dataset\\kioscoinformaticodataset.xsc||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -163,94 +147,43 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MenuPrincipalView.cs",
-              "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoDesktop\\Views\\MenuPrincipalView.cs",
-              "RelativeDocumentMoniker": "KioscoInformaticoDesktop\\Views\\MenuPrincipalView.cs",
-              "ToolTip": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoDesktop\\Views\\MenuPrincipalView.cs",
-              "RelativeToolTip": "KioscoInformaticoDesktop\\Views\\MenuPrincipalView.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAAACsAAABWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T19:21:33.993Z",
+              "Title": "EditarLocalidad.razor",
+              "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoWeb\\Pages\\Localidades\\EditarLocalidad.razor",
+              "RelativeDocumentMoniker": "KioscoInformaticoWeb\\Pages\\Localidades\\EditarLocalidad.razor",
+              "ToolTip": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoWeb\\Pages\\Localidades\\EditarLocalidad.razor",
+              "RelativeToolTip": "KioscoInformaticoWeb\\Pages\\Localidades\\EditarLocalidad.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-16T16:42:45.325Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MenuPrincipalView.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoDesktop\\Views\\MenuPrincipalView.cs",
-              "RelativeDocumentMoniker": "KioscoInformaticoDesktop\\Views\\MenuPrincipalView.cs",
-              "ToolTip": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoDesktop\\Views\\MenuPrincipalView.cs [Dise\u00F1o]",
-              "RelativeToolTip": "KioscoInformaticoDesktop\\Views\\MenuPrincipalView.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T19:20:52.64Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProveedoresController.cs",
-              "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoBackend\\Controllers\\ProveedoresController.cs",
-              "RelativeDocumentMoniker": "KioscoInformaticoBackend\\Controllers\\ProveedoresController.cs",
-              "ToolTip": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoBackend\\Controllers\\ProveedoresController.cs",
-              "RelativeToolTip": "KioscoInformaticoBackend\\Controllers\\ProveedoresController.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T19:18:20.722Z",
+              "Title": "AgregarCliente.razor",
+              "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoWeb\\Pages\\Clientes\\AgregarCliente.razor",
+              "RelativeDocumentMoniker": "KioscoInformaticoWeb\\Pages\\Clientes\\AgregarCliente.razor",
+              "ToolTip": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoWeb\\Pages\\Clientes\\AgregarCliente.razor",
+              "RelativeToolTip": "KioscoInformaticoWeb\\Pages\\Clientes\\AgregarCliente.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-16T16:42:07.672Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FormaDePagoEnum.cs",
-              "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoServices\\Enums\\FormaDePagoEnum.cs",
-              "RelativeDocumentMoniker": "KioscoInformaticoServices\\Enums\\FormaDePagoEnum.cs",
-              "ToolTip": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoServices\\Enums\\FormaDePagoEnum.cs",
-              "RelativeToolTip": "KioscoInformaticoServices\\Enums\\FormaDePagoEnum.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T19:16:31.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CondicionIvaEnum.cs",
-              "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoServices\\Enums\\CondicionIvaEnum.cs",
-              "RelativeDocumentMoniker": "KioscoInformaticoServices\\Enums\\CondicionIvaEnum.cs",
-              "ToolTip": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoServices\\Enums\\CondicionIvaEnum.cs",
-              "RelativeToolTip": "KioscoInformaticoServices\\Enums\\CondicionIvaEnum.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T19:16:28.528Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "KioscoInformaticoDataSet.xsd",
-              "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoDesktop\\DataSet\\KioscoInformaticoDataSet.xsd",
-              "RelativeDocumentMoniker": "KioscoInformaticoDesktop\\DataSet\\KioscoInformaticoDataSet.xsd",
-              "ToolTip": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoDesktop\\DataSet\\KioscoInformaticoDataSet.xsd",
-              "RelativeToolTip": "KioscoInformaticoDesktop\\DataSet\\KioscoInformaticoDataSet.xsd",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
-              "WhenOpened": "2024-10-15T17:42:05.697Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "LocalidadesViewReport.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoDesktop\\ViewReports\\LocalidadesViewReport.cs",
               "RelativeDocumentMoniker": "KioscoInformaticoDesktop\\ViewReports\\LocalidadesViewReport.cs",
               "ToolTip": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoDesktop\\ViewReports\\LocalidadesViewReport.cs [Dise\u00F1o]",
               "RelativeToolTip": "KioscoInformaticoDesktop\\ViewReports\\LocalidadesViewReport.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:47:59.236Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-10-15T17:47:59.236Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "LocalidadesViewReport.cs",
               "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoDesktop\\ViewReports\\LocalidadesViewReport.cs",
               "RelativeDocumentMoniker": "KioscoInformaticoDesktop\\ViewReports\\LocalidadesViewReport.cs",
@@ -258,12 +191,11 @@
               "RelativeToolTip": "KioscoInformaticoDesktop\\ViewReports\\LocalidadesViewReport.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAkwCMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T22:43:09.199Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T22:43:09.199Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "KioscoInformaticoDataSet.xsc",
               "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoDesktop\\DataSet\\KioscoInformaticoDataSet.xsc",
               "RelativeDocumentMoniker": "KioscoInformaticoDesktop\\DataSet\\KioscoInformaticoDataSet.xsc",
@@ -271,12 +203,11 @@
               "RelativeToolTip": "KioscoInformaticoDesktop\\DataSet\\KioscoInformaticoDataSet.xsc",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001612|",
-              "WhenOpened": "2024-10-15T19:10:04.013Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T19:10:04.013Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "KioscoInformaticoDataSet.Designer.cs",
               "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoDesktop\\DataSet\\KioscoInformaticoDataSet.Designer.cs",
               "RelativeDocumentMoniker": "KioscoInformaticoDesktop\\DataSet\\KioscoInformaticoDataSet.Designer.cs",
@@ -284,12 +215,11 @@
               "RelativeToolTip": "KioscoInformaticoDesktop\\DataSet\\KioscoInformaticoDataSet.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T19:10:03.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T19:10:03.114Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "KioscoInformaticoDataSet.cs",
               "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoDesktop\\DataSet\\KioscoInformaticoDataSet.cs",
               "RelativeDocumentMoniker": "KioscoInformaticoDesktop\\DataSet\\KioscoInformaticoDataSet.cs",
@@ -297,25 +227,23 @@
               "RelativeToolTip": "KioscoInformaticoDesktop\\DataSet\\KioscoInformaticoDataSet.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T19:10:02.215Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T19:10:02.215Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "KioscoInformaticoDesktop",
+              "DocumentIndex": 8,
+              "Title": "KioscoInformaticoDesktop.csproj",
               "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj",
               "RelativeDocumentMoniker": "KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj",
               "ToolTip": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj",
               "RelativeToolTip": "KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj",
               "ViewState": "AQIAACwAAAAAAAAAAAAAwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-15T18:53:39.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T18:53:39.463Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
               "Title": "LocalidadesController.cs",
               "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoBackend\\Controllers\\LocalidadesController.cs",
               "RelativeDocumentMoniker": "KioscoInformaticoBackend\\Controllers\\LocalidadesController.cs",
@@ -323,12 +251,11 @@
               "RelativeToolTip": "KioscoInformaticoBackend\\Controllers\\LocalidadesController.cs",
               "ViewState": "AQIAAFwAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T18:22:46.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T18:22:46.792Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 10,
               "Title": "LocalidadesReport.rdlc [Dise\u00F1o]",
               "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoDesktop\\Reports\\LocalidadesReport.rdlc",
               "RelativeDocumentMoniker": "KioscoInformaticoDesktop\\Reports\\LocalidadesReport.rdlc",
@@ -340,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 13,
               "Title": "Localidad.cs",
               "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoServices\\Models\\Localidad.cs",
               "RelativeDocumentMoniker": "KioscoInformaticoServices\\Models\\Localidad.cs",
@@ -348,12 +275,11 @@
               "RelativeToolTip": "KioscoInformaticoServices\\Models\\Localidad.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T18:15:42.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T18:15:42.738Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 9,
               "Title": "ClientesController.cs",
               "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoBackend\\Controllers\\ClientesController.cs",
               "RelativeDocumentMoniker": "KioscoInformaticoBackend\\Controllers\\ClientesController.cs",
@@ -361,12 +287,11 @@
               "RelativeToolTip": "KioscoInformaticoBackend\\Controllers\\ClientesController.cs",
               "ViewState": "AQIAAFcAAAAAAAAAAAAAAGwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T18:22:33.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T18:22:33.555Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 12,
               "Title": "DetallesVentasController.cs",
               "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoBackend\\Controllers\\DetallesVentasController.cs",
               "RelativeDocumentMoniker": "KioscoInformaticoBackend\\Controllers\\DetallesVentasController.cs",
@@ -374,12 +299,11 @@
               "RelativeToolTip": "KioscoInformaticoBackend\\Controllers\\DetallesVentasController.cs",
               "ViewState": "AQIAADgAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T18:22:52.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T18:22:52.165Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 11,
               "Title": "KioscoContext.cs",
               "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoBackend\\DataContext\\KioscoContext.cs",
               "RelativeDocumentMoniker": "KioscoInformaticoBackend\\DataContext\\KioscoContext.cs",
@@ -387,12 +311,11 @@
               "RelativeToolTip": "KioscoInformaticoBackend\\DataContext\\KioscoContext.cs",
               "ViewState": "AQIAABgBAAAAAAAAAAAAACYBAABvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:00:04.971Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T17:00:04.971Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 14,
               "Title": "GenericService.cs",
               "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoServices\\Services\\GenericService.cs",
               "RelativeDocumentMoniker": "KioscoInformaticoServices\\Services\\GenericService.cs",
@@ -400,12 +323,11 @@
               "RelativeToolTip": "KioscoInformaticoServices\\Services\\GenericService.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAAAB0AAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:38:33.575Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T17:38:33.575Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 18,
               "Title": "Proveedor.cs",
               "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoServices\\Models\\Proveedor.cs",
               "RelativeDocumentMoniker": "KioscoInformaticoServices\\Models\\Proveedor.cs",
@@ -413,12 +335,11 @@
               "RelativeToolTip": "KioscoInformaticoServices\\Models\\Proveedor.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:02:22.583Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T17:02:22.583Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 15,
               "Title": "ApiEndpoints.cs",
               "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoServices\\Class\\ApiEndpoints.cs",
               "RelativeDocumentMoniker": "KioscoInformaticoServices\\Class\\ApiEndpoints.cs",
@@ -426,12 +347,11 @@
               "RelativeToolTip": "KioscoInformaticoServices\\Class\\ApiEndpoints.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAAoAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:57:11.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T17:57:11.249Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 16,
               "Title": "LocalidadesReport.rdlc",
               "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoDesktop\\Reports\\LocalidadesReport.rdlc",
               "RelativeDocumentMoniker": "KioscoInformaticoDesktop\\Reports\\LocalidadesReport.rdlc",
@@ -439,12 +359,11 @@
               "RelativeToolTip": "KioscoInformaticoDesktop\\Reports\\LocalidadesReport.rdlc",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAF8BAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
-              "WhenOpened": "2024-10-15T17:12:52.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T17:12:52.366Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 19,
               "Title": "Compra.cs",
               "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoServices\\Models\\Compra.cs",
               "RelativeDocumentMoniker": "KioscoInformaticoServices\\Models\\Compra.cs",
@@ -452,12 +371,11 @@
               "RelativeToolTip": "KioscoInformaticoServices\\Models\\Compra.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:01:42.558Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T17:01:42.558Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 20,
               "Title": "DetalleVenta.cs",
               "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoServices\\Models\\DetalleVenta.cs",
               "RelativeDocumentMoniker": "KioscoInformaticoServices\\Models\\DetalleVenta.cs",
@@ -465,12 +383,11 @@
               "RelativeToolTip": "KioscoInformaticoServices\\Models\\DetalleVenta.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:01:37.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T17:01:37.278Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 17,
               "Title": "DetalleCompra.cs",
               "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoServices\\Models\\DetalleCompra.cs",
               "RelativeDocumentMoniker": "KioscoInformaticoServices\\Models\\DetalleCompra.cs",
@@ -478,12 +395,11 @@
               "RelativeToolTip": "KioscoInformaticoServices\\Models\\DetalleCompra.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:01:32.226Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T17:01:32.226Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 23,
               "Title": "ProductosViewModel.cs",
               "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoApp\\KioscoInformaticoApp\\ViewModels\\ProductosViewModel.cs",
               "RelativeDocumentMoniker": "KioscoInformaticoApp\\KioscoInformaticoApp\\ViewModels\\ProductosViewModel.cs",
@@ -491,12 +407,11 @@
               "RelativeToolTip": "KioscoInformaticoApp\\KioscoInformaticoApp\\ViewModels\\ProductosViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T16:48:09.38Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T16:48:09.38Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 21,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoApp\\KioscoInformaticoApp\\AppShell.xaml",
               "RelativeDocumentMoniker": "KioscoInformaticoApp\\KioscoInformaticoApp\\AppShell.xaml",
@@ -504,12 +419,11 @@
               "RelativeToolTip": "KioscoInformaticoApp\\KioscoInformaticoApp\\AppShell.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-04T18:27:37.399Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T18:27:37.399Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 22,
               "Title": "ProductosView.xaml",
               "DocumentMoniker": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoApp\\KioscoInformaticoApp\\Views\\ProductosView.xaml",
               "RelativeDocumentMoniker": "KioscoInformaticoApp\\KioscoInformaticoApp\\Views\\ProductosView.xaml",
@@ -517,8 +431,7 @@
               "RelativeToolTip": "KioscoInformaticoApp\\KioscoInformaticoApp\\Views\\ProductosView.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-04T16:45:21.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T16:45:21.377Z"
             }
           ]
         }

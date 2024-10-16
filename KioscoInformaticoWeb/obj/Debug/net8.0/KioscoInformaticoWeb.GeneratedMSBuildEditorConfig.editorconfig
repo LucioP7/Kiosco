@@ -46,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/TerceroLucio/TSDS/KioscoInformaticoWeb/Pages/Localidades/AgregarLocalidad.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9jYWxpZGFkZXNcQWdyZWdhckxvY2FsaWRhZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/TerceroLucio/TSDS/KioscoInformaticoWeb/Pages/Localidades/EditarLocalidad.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9jYWxpZGFkZXNcRWRpdGFyTG9jYWxpZGFkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
