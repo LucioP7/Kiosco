@@ -20,12 +20,12 @@ namespace KioscoInformaticoDesktop.Views
         BindingSource listaProductos = new BindingSource();
         List<Producto> listaAFiltrar = new List<Producto>();
 
-        Producto productoCurrent;
+        Producto? productoCurrent;
         public ProductosView()
         {
             InitializeComponent();
             dataGridProductos.DataSource = listaProductos;
-            CargarGrilla();
+            _ = CargarGrilla();
         }
 
         private async Task CargarGrilla()

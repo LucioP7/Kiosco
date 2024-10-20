@@ -20,13 +20,13 @@ namespace KioscoInformaticoDesktop.Views
         ILocalidadService localidadService = new LocalidadService();
         BindingSource listaClientes = new BindingSource();
         List<Cliente> listaAFiltrar = new List<Cliente>();
-        Cliente clienteCurrent;
+        Cliente? clienteCurrent;
         public ClientesView()
         {
             InitializeComponent();
             dataGridClientes.DataSource = listaClientes;
-            CargarGrilla();
-            CargarCombo();
+            _ = CargarGrilla();
+            _ = CargarCombo();
         }
 
         private async Task CargarCombo()
@@ -113,7 +113,7 @@ namespace KioscoInformaticoDesktop.Views
             }
         }
 
-        private async void FiltrarClientes()
+        private void FiltrarClientes()
         {
             var clientesFiltrados = listaAFiltrar.Where(p => p.Nombre.ToUpper().Contains(txtBuscar.Text.ToUpper())).ToList();
             listaClientes.DataSource = clientesFiltrados;

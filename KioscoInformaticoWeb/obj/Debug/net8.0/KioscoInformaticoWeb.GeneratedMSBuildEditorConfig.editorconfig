@@ -13,79 +13,79 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = KioscoInformaticoWeb
 build_property.RootNamespace = KioscoInformaticoWeb
-build_property.ProjectDir = C:\TerceroLucio\TSDS\KioscoInformaticoWeb\
+build_property.ProjectDir = C:\Kiosco\KioscoInformaticoWeb\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\TerceroLucio\TSDS\KioscoInformaticoWeb
+build_property.MSBuildProjectDirectory = C:\Kiosco\KioscoInformaticoWeb
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/TerceroLucio/TSDS/KioscoInformaticoWeb/App.razor]
+[C:/Kiosco/KioscoInformaticoWeb/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TerceroLucio/TSDS/KioscoInformaticoWeb/Pages/Clientes/AgregarCliente.razor]
+[C:/Kiosco/KioscoInformaticoWeb/Pages/Clientes/AgregarCliente.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50ZXNcQWdyZWdhckNsaWVudGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TerceroLucio/TSDS/KioscoInformaticoWeb/Pages/Clientes/Clientes.razor]
+[C:/Kiosco/KioscoInformaticoWeb/Pages/Clientes/Clientes.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50ZXNcQ2xpZW50ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TerceroLucio/TSDS/KioscoInformaticoWeb/Pages/Clientes/EditarCliente.razor]
+[C:/Kiosco/KioscoInformaticoWeb/Pages/Clientes/EditarCliente.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50ZXNcRWRpdGFyQ2xpZW50ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TerceroLucio/TSDS/KioscoInformaticoWeb/Pages/Counter.razor]
+[C:/Kiosco/KioscoInformaticoWeb/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TerceroLucio/TSDS/KioscoInformaticoWeb/Pages/Home.razor]
+[C:/Kiosco/KioscoInformaticoWeb/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TerceroLucio/TSDS/KioscoInformaticoWeb/Pages/Localidades/AgregarLocalidad.razor]
+[C:/Kiosco/KioscoInformaticoWeb/Pages/Localidades/AgregarLocalidad.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9jYWxpZGFkZXNcQWdyZWdhckxvY2FsaWRhZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TerceroLucio/TSDS/KioscoInformaticoWeb/Pages/Localidades/EditarLocalidad.razor]
+[C:/Kiosco/KioscoInformaticoWeb/Pages/Localidades/EditarLocalidad.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9jYWxpZGFkZXNcRWRpdGFyTG9jYWxpZGFkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TerceroLucio/TSDS/KioscoInformaticoWeb/Pages/Localidades/Localidades.razor]
+[C:/Kiosco/KioscoInformaticoWeb/Pages/Localidades/Localidades.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9jYWxpZGFkZXNcTG9jYWxpZGFkZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TerceroLucio/TSDS/KioscoInformaticoWeb/Pages/Productos/AgregarProducto.razor]
+[C:/Kiosco/KioscoInformaticoWeb/Pages/Productos/AgregarProducto.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdG9zXEFncmVnYXJQcm9kdWN0by5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TerceroLucio/TSDS/KioscoInformaticoWeb/Pages/Productos/EditarProducto.razor]
+[C:/Kiosco/KioscoInformaticoWeb/Pages/Productos/EditarProducto.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdG9zXEVkaXRhclByb2R1Y3RvLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TerceroLucio/TSDS/KioscoInformaticoWeb/Pages/Productos/Productos.razor]
+[C:/Kiosco/KioscoInformaticoWeb/Pages/Productos/Productos.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdG9zXFByb2R1Y3Rvcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TerceroLucio/TSDS/KioscoInformaticoWeb/Pages/Weather.razor]
+[C:/Kiosco/KioscoInformaticoWeb/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TerceroLucio/TSDS/KioscoInformaticoWeb/_Imports.razor]
+[C:/Kiosco/KioscoInformaticoWeb/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/TerceroLucio/TSDS/KioscoInformaticoWeb/Components/Commons/TitlePage.razor]
+[C:/Kiosco/KioscoInformaticoWeb/Components/Commons/TitlePage.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb21tb25zXFRpdGxlUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-s9ew4wwwkh
 
-[C:/TerceroLucio/TSDS/KioscoInformaticoWeb/Layout/MainLayout.razor]
+[C:/Kiosco/KioscoInformaticoWeb/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-qxyue4ruv2
 
-[C:/TerceroLucio/TSDS/KioscoInformaticoWeb/Layout/NavMenu.razor]
+[C:/Kiosco/KioscoInformaticoWeb/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-6lgyxxmy0w

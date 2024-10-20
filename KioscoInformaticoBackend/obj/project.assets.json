@@ -6707,23 +6707,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dell14\\.nuget\\packages\\": {},
+    "C:\\Users\\Estudiante\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoBackend\\KioscoInformaticoBackend.csproj",
+      "projectUniqueName": "C:\\Kiosco\\KioscoInformaticoBackend\\KioscoInformaticoBackend.csproj",
       "projectName": "KioscoInformaticoBackend",
-      "projectPath": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoBackend\\KioscoInformaticoBackend.csproj",
-      "packagesPath": "C:\\Users\\Dell14\\.nuget\\packages\\",
-      "outputPath": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoBackend\\obj\\",
+      "projectPath": "C:\\Kiosco\\KioscoInformaticoBackend\\KioscoInformaticoBackend.csproj",
+      "packagesPath": "C:\\Users\\Estudiante\\.nuget\\packages\\",
+      "outputPath": "C:\\Kiosco\\KioscoInformaticoBackend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dell14\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Estudiante\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6739,8 +6739,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\TerceroLucio\\TSDS\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj": {
-              "projectPath": "C:\\TerceroLucio\\TSDS\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj"
+            "C:\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj": {
+              "projectPath": "C:\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj"
             }
           }
         }
@@ -6808,7 +6808,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

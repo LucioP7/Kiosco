@@ -22,13 +22,13 @@ namespace KioscoInformaticoDesktop.Views
         BindingSource listaProveedores = new BindingSource();
         List<Proveedor> listaAFiltrar = new List<Proveedor>();
 
-        Proveedor proveedorCurrent;
+        Proveedor? proveedorCurrent;
         public ProveedoresView()
         {
             InitializeComponent();
             dataGridProveedores.DataSource = listaProveedores;
-            CargarGrilla();
-            CargarCombo();
+            _ = CargarGrilla();
+            _ = CargarCombo();
             cboCondicionIva.DataSource = Enum.GetValues(typeof(CondicionIvaEnum));
         }
 
@@ -65,7 +65,7 @@ namespace KioscoInformaticoDesktop.Views
                 proveedorCurrent.Cbu = txtCbu.Text;
                 proveedorCurrent.Direccion = txtDireccion.Text;
                 proveedorCurrent.Telefonos = txtTelefonos.Text;
-                proveedorCurrent.CondicionIva = (CondicionIvaEnum)cboCondicionIva.SelectedItem;
+                proveedorCurrent.CondicionIva = cboCondicionIva.SelectedItem as CondicionIvaEnum? ?? CondicionIvaEnum.No_definido;
                 proveedorCurrent.LocalidadId = (int?)cboLocalidades.SelectedValue;
                 await proveedorService.UpdateAsync(proveedorCurrent);
                 proveedorCurrent = null;

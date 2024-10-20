@@ -19,12 +19,12 @@ namespace KioscoInformaticoDesktop.Views
 
         BindingSource listaLocalidades = new BindingSource();
 
-        Localidad localidadCurrent;
+        Localidad? localidadCurrent;
         public LocalidadesView()
         {
             InitializeComponent();
             dataGridLocalidades.DataSource = listaLocalidades;
-            CargarGrilla();
+            _ = CargarGrilla();
         }
 
         private async Task CargarGrilla()
