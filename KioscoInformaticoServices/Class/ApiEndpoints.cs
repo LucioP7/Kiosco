@@ -2,14 +2,14 @@
 {
     public static class ApiEndpoints
     {
-        public static string Cliente { get; set; } = "clientes";
-        public static string Compra { get; set; } = "compras";
-        public static string DetalleCompra { get; set; } = "detallescompras";
-        public static string DetalleVenta { get; set; } = "detallesventas";
-        public static string Localidad { get; set; } = "localidades";
-        public static string Producto { get; set; } = "productos";
-        public static string Proveedor { get; set; } = "proveedores";
-        public static string Venta { get; set; } = "ventas";
+        public static string Cliente { get; set; } = "Clientes";
+        public static string Compra { get; set; } = "Compras";
+        public static string DetalleCompra { get; set; } = "DetallesCompras";
+        public static string DetalleVenta { get; set; } = "DetallesVentas";
+        public static string Localidad { get; set; } = "Localidades";
+        public static string Producto { get; set; } = "Productos";
+        public static string Proveedor { get; set; } = "Proveedores";
+        public static string Venta { get; set; } = "Ventas";
 
 
         public static string GetEndpoint(string name)
