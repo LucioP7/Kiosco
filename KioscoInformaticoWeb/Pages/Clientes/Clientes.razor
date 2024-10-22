@@ -6,7 +6,7 @@
 
 @if(clientes != null)
 {
-    <NavLink href="agregarcliente">
+    <NavLink href="agregareditarcliente">
         Agregar cliente
     </NavLink>
     <table class="table">
@@ -33,7 +33,7 @@
                     <td>@cliente.FechaNacimiento</td>
                     <td>@cliente.Localidad</td>
                     <td>
-                        <a href="/editarcliente?IdClienteEditado=@cliente.Id">Editar</a>
+                        <a href="/agregareditarcliente?IdClienteEditado=@cliente.Id">Editar</a>
                     </td>
                     <td>
                         <button title="Eliminar" class="btn btn-danger" @onclick="@(()=>Eliminar(cliente))">Eliminar</button>

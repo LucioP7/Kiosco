@@ -13,10 +13,18 @@ namespace KioscoInformaticoServices.Services
 
         public GenericService()
         {
-            client = new HttpClient();
-            options = new JsonSerializerOptions() { PropertyNameCaseInsensitive = true };
-            var urlApi = Properties.Resources.UrlApi;
-            _endpoint = urlApi + ApiEndpoints.GetEndpoint(typeof(T).Name);
+            this.client = new HttpClient();
+            this.options = new JsonSerializerOptions() { PropertyNameCaseInsensitive = true };
+            var remoto = Properties.Resources.Remoto;
+            string urlApi = Properties.Resources.UrlApi;
+            if (remoto == "false")
+            {
+                urlApi = Properties.Resources.urlApiLocal;
+            }
+            else
+            {
+                this._endpoint = urlApi + ApiEndpoints.GetEndpoint(typeof(T).Name);
+            }
         }
 
         public async Task<List<T>?> GetAllAsync()

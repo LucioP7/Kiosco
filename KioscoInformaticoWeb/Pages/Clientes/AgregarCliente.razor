@@ -1,40 +1,96 @@
-﻿@page "/agregarcliente"
+﻿@page "/agregareditarcliente"
 @inject IClienteService ClienteService
+@inject ILocalidadService LocalidadService
 @inject NavigationManager NavigationManager
+@inject SweetAlertService SweetAlert;
 
-<TitlePage Title="Agregando Cliente" />
+<TitlePage Title="Editando cliente" />
 
-<EditForm Model="cliente" OnValidSubmit="Guardar">
-    <DataAnnotationsValidator />
+@if (cliente != null || localidades != null)
+{
+    <EditForm Model="cliente" OnValidSubmit="Guardar">
+        <DataAnnotationsValidator />
 
-    <div class="form-group">
-        <label for="Nombre">Nombre</label>
-        <InputText id="Nombre" class="form-control" @bind-Value="cliente.Nombre" />
-        <label for="Direccion">Dirección</label>
-        <InputText id="Direccion" class="form-control" @bind-Value="cliente.Direccion" />
-        <label for="Telefonos">Teléfonos</label>
-        <InputText id="Telefonos" class="form-control" @bind-Value="cliente.Telefonos" />
-        <label for="FechaNacimiento">Fecha de nacimiento</label>
-        <InputDate id="FechaNacimiento" class="form-control" @bind-Value="cliente.FechaNacimiento" />
-        <label for="Localidad">Localidad</label>
-    </div>
+        <div class="form-group">
+            <label for="Nombre">Nombre</label>
+            <InputText id="Nombre" class="form-control" @bind-Value="cliente.Nombre" />
+        </div>
 
-    <button type="submit" class="btn btn-primary">Guardar</button>
-    <button class="btn btn-primary mb-2" type="button" @onclick="@(()=>NavigationManager.NavigateTo("/clientes"))">Volver a la lista</button>
-    <ValidationSummary />
+        <div class="form-group">
+            <label for="Direccion">Dirección</label>
+            <InputText id="Direccion" class="form-control" @bind-Value="cliente.Direccion" />
+        </div>
+
+        <div class="form-group">
+            <label for="Telefonos">Teléfonos</label>
+            <InputText id="Telefonos" class="form-control" @bind-Value="cliente.Telefonos" />
+        </div>
+
+        <div class="form-group">
+            <label for="FechaNacimiento">Fecha de nacimiento</label>
+            <InputDate id="FechaNacimiento" class="form-control" @bind-Value="cliente.FechaNacimiento" />
+        </div>
+
+        <div class="form-group">
+            <label for="Localidad">Localidad</label>
+            <InputSelect id="Localidad" class="form-control" @bind-Value="cliente.LocalidadId">
+                <option value="">Seleccione una localidad</option>
+                @foreach (var localidad in localidades)
+                {
+                    <option value="@localidad.Id">@localidad.Nombre</option>
+                }
+            </InputSelect>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <button class="btn btn-primary mb-2" type="button" @onclick="@(()=>NavigationManager.NavigateTo("/clientes"))">Volver a la lista</button>
+        <ValidationSummary />
     </EditForm>
+}
+else
+{
+    <p><em>Cargando...</em></p>
+}
+
 
 @code {
-    private Cliente? cliente;
+    [SupplyParameterFromQuery]
+    [Parameter]
+    public int IdClienteEditado { get; set; }
 
-    protected override void OnInitialized()
+    Cliente? cliente;
+
+    List<Localidad>? localidades = new List<Localidad>();
+
+    protected override async Task OnInitializedAsync()
     {
-        cliente = new Cliente();
+        if(IdClienteEditado != 0)
+        {
+            cliente = await ClienteService.GetByIdAsync(IdClienteEditado) ?? new Cliente();
+        }
+        else
+        {
+            cliente = new Cliente();
+        }
+        localidades = await LocalidadService.GetAllAsync();
     }
 
     private async void Guardar()
     {
-        await ClienteService.AddAsync(cliente);
+        if(cliente.LocalidadId == 0)
+        {
+            await SweetAlert.FireAsync("Advertencia", "Debe seleccionar una localidad", SweetAlertIcon.Warning);
+            return;
+        }
+
+        if (IdClienteEditado == 0)
+        {
+            await ClienteService.AddAsync(cliente);
+        }
+        else
+        {
+            await ClienteService.UpdateAsync(cliente);
+        }
         NavigationManager.NavigateTo("/clientes");
     }
 }
