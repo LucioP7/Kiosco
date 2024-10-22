@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj": {}
+    "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj": {}
   },
   "projects": {
-    "C:\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj": {
+    "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj",
+        "projectUniqueName": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj",
         "projectName": "KioscoInformaticoApp",
-        "projectPath": "C:\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj",
-        "packagesPath": "C:\\Users\\Estudiante\\.nuget\\packages\\",
-        "outputPath": "C:\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\obj\\",
+        "projectPath": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\KioscoInformaticoApp.csproj",
+        "packagesPath": "C:\\Users\\Dell14\\.nuget\\packages\\",
+        "outputPath": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoApp\\KioscoInformaticoApp\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Estudiante\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell14\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -37,32 +37,32 @@
           "net8.0-android34.0": {
             "targetAlias": "net8.0-android",
             "projectReferences": {
-              "C:\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj": {
-                "projectPath": "C:\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj"
+              "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj": {
+                "projectPath": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj"
               }
             }
           },
-          "net8.0-ios17.5": {
+          "net8.0-ios17.2": {
             "targetAlias": "net8.0-ios",
             "projectReferences": {
-              "C:\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj": {
-                "projectPath": "C:\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj"
+              "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj": {
+                "projectPath": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj"
               }
             }
           },
-          "net8.0-maccatalyst17.5": {
+          "net8.0-maccatalyst17.2": {
             "targetAlias": "net8.0-maccatalyst",
             "projectReferences": {
-              "C:\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj": {
-                "projectPath": "C:\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj"
+              "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj": {
+                "projectPath": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj"
               }
             }
           },
           "net8.0-windows10.0.19041": {
             "targetAlias": "net8.0-windows10.0.19041.0",
             "projectReferences": {
-              "C:\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj": {
-                "projectPath": "C:\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj"
+              "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj": {
+                "projectPath": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj"
               }
             }
           }
@@ -82,26 +82,22 @@
         "net8.0-android34.0": {
           "targetAlias": "net8.0-android",
           "dependencies": {
-            "CommunityToolkit.Mvvm": {
-              "target": "Package",
-              "version": "[8.3.2, )"
-            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.1, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.91, )"
+              "version": "[8.0.92, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.91, )"
+              "version": "[8.0.92, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )",
+              "version": "[8.0.5, )",
               "autoReferenced": true
             }
           },
@@ -124,31 +120,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         },
-        "net8.0-ios17.5": {
+        "net8.0-ios17.2": {
           "targetAlias": "net8.0-ios",
           "dependencies": {
-            "CommunityToolkit.Mvvm": {
-              "target": "Package",
-              "version": "[8.3.2, )"
-            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.1, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.91, )"
+              "version": "[8.0.92, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.91, )"
+              "version": "[8.0.92, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )",
+              "version": "[8.0.5, )",
               "autoReferenced": true
             }
           },
@@ -171,31 +163,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         },
-        "net8.0-maccatalyst17.5": {
+        "net8.0-maccatalyst17.2": {
           "targetAlias": "net8.0-maccatalyst",
           "dependencies": {
-            "CommunityToolkit.Mvvm": {
-              "target": "Package",
-              "version": "[8.3.2, )"
-            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.1, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.91, )"
+              "version": "[8.0.92, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.91, )"
+              "version": "[8.0.92, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )",
+              "version": "[8.0.5, )",
               "autoReferenced": true
             }
           },
@@ -219,26 +207,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         },
         "net8.0-windows10.0.19041": {
           "targetAlias": "net8.0-windows10.0.19041.0",
           "dependencies": {
-            "CommunityToolkit.Mvvm": {
-              "target": "Package",
-              "version": "[8.3.2, )"
-            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.1, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.91, )"
+              "version": "[8.0.92, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.91, )"
+              "version": "[8.0.92, )"
             }
           },
           "imports": [
@@ -252,6 +236,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Windows.SDK.NET.Ref",
+              "version": "[10.0.19041.31, 10.0.19041.31]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -260,7 +250,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -287,20 +277,20 @@
         }
       }
     },
-    "C:\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj": {
+    "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj",
+        "projectUniqueName": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj",
         "projectName": "KioscoInformaticoServices",
-        "projectPath": "C:\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj",
-        "packagesPath": "C:\\Users\\Estudiante\\.nuget\\packages\\",
-        "outputPath": "C:\\Kiosco\\KioscoInformaticoServices\\obj\\",
+        "projectPath": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\KioscoInformaticoServices.csproj",
+        "packagesPath": "C:\\Users\\Dell14\\.nuget\\packages\\",
+        "outputPath": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Estudiante\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell14\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -348,7 +338,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

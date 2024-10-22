@@ -17,12 +17,12 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>13.97467cm</Width>
+              <Width>15.49633cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>1.04704cm</Height>
+              <Height>1.4286cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -43,7 +43,8 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Id</rd:DefaultName>
-                          <Top>0.07056cm</Top>
+                          <Top>0.10583cm</Top>
+                          <Left>1.11759cm</Left>
                           <Height>0.6cm</Height>
                           <Width>0.99188cm</Width>
                           <Style>
@@ -71,8 +72,8 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Nombre</rd:DefaultName>
-                          <Top>0.07056cm</Top>
-                          <Left>3.28613cm</Left>
+                          <Top>0.10583cm</Top>
+                          <Left>4.40372cm</Left>
                           <Height>0.6cm</Height>
                           <Width>2.5cm</Width>
                           <ZIndex>1</ZIndex>
@@ -101,8 +102,8 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Direccion</rd:DefaultName>
-                          <Top>0.07056cm</Top>
-                          <Left>6.72981cm</Left>
+                          <Top>0.10583cm</Top>
+                          <Left>7.8474cm</Left>
                           <Height>0.6cm</Height>
                           <Width>3.4537cm</Width>
                           <ZIndex>2</ZIndex>
@@ -131,8 +132,8 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Telefonos</rd:DefaultName>
-                          <Top>0.07056cm</Top>
-                          <Left>11.07307cm</Left>
+                          <Top>0.10583cm</Top>
+                          <Left>12.19066cm</Left>
                           <Height>0.6cm</Height>
                           <Width>2.5cm</Width>
                           <ZIndex>3</ZIndex>
@@ -146,6 +147,17 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <Line Name="Line3">
+                          <Top>0.88222cm</Top>
+                          <Height>0cm</Height>
+                          <Width>15.49633cm</Width>
+                          <ZIndex>4</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Line>
                       </ReportItems>
                       <KeepTogether>true</KeepTogether>
                       <ZIndex>3</ZIndex>
@@ -175,9 +187,9 @@
         </TablixRowHierarchy>
         <DataSetName>DSClientes</DataSetName>
         <Top>0.28222cm</Top>
-        <Left>1.62443cm</Left>
-        <Height>1.04704cm</Height>
-        <Width>13.97467cm</Width>
+        <Left>0.56398cm</Left>
+        <Height>1.4286cm</Height>
+        <Width>15.49633cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -185,23 +197,11 @@
           </Border>
         </Style>
       </Tablix>
-      <Line Name="Line3">
-        <Top>1.7461cm</Top>
-        <Left>0.50683cm</Left>
-        <Height>0cm</Height>
-        <Width>15.49633cm</Width>
-        <ZIndex>2</ZIndex>
-        <Style>
-          <Border>
-            <Style>Solid</Style>
-          </Border>
-        </Style>
-      </Line>
     </ReportItems>
-    <Height>0.68744in</Height>
+    <Height>0.743in</Height>
     <Style />
   </Body>
-  <Width>6.5in</Width>
+  <Width>6.74046in</Width>
   <Page>
     <PageHeader>
       <Height>2.61056cm</Height>

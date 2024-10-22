@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace KioscoInformaticoServices.Models;
 
@@ -13,4 +14,6 @@ public partial class DetalleVenta
     public virtual Producto Producto { get; set; } = null!;
     public virtual Venta Venta { get; set; } = null!;
     public bool Eliminado { get; set; } = false;
+    [NotMapped]
+    public decimal Subtotal => Cantidad * PrecioUnitario;
 }

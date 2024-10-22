@@ -14,11 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KioscoInformaticoApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+0e683af14a9b5792a3fc2a115d32d6ef51741714")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+909b0eb942da1370fdd2cbeb85be721863a8a684")]
 [assembly: System.Reflection.AssemblyProductAttribute("KioscoInformaticoApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KioscoInformaticoApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
-[assembly: System.Runtime.Versioning.TargetPlatformAttribute("iOS17.5")]
+[assembly: System.Runtime.Versioning.TargetPlatformAttribute("iOS17.2")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("iOS11.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
