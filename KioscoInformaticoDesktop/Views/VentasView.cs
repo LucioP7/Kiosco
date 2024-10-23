@@ -27,7 +27,7 @@ namespace KioscoInformaticoDesktop.Views
         public VentasView()
         {
             InitializeComponent();
-
+            AjustePantalla();
         }
 
         private async void AjustePantalla()
@@ -128,7 +128,6 @@ namespace KioscoInformaticoDesktop.Views
             Venta.FormaPago = (FormaDePagoEnum)cBFormasPago.SelectedItem;
             Venta.Total = numTotal.Value;
             Venta.Iva = Venta.Total * 0.21m;
-
             Venta.Cliente = null;
             Venta.DetallesVenta.ToList().ForEach(dv => dv.Producto = null);
             Venta.DetallesVenta.ToList().ForEach(dv => dv.Venta = null);

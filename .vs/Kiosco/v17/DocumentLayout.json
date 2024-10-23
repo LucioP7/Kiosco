@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\TerceroLucio\\Kiosco\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FB31FCDB-4FE2-4451-AF0D-F5E34A36D672}|KioscoInformaticoServices\\KioscoInformaticoServices.csproj|c:\\tercerolucio\\kiosco\\kioscoinformaticoservices\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{FB31FCDB-4FE2-4451-AF0D-F5E34A36D672}|KioscoInformaticoServices\\KioscoInformaticoServices.csproj|solutionrelative:kioscoinformaticoservices\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB31FCDB-4FE2-4451-AF0D-F5E34A36D672}|KioscoInformaticoServices\\KioscoInformaticoServices.csproj|c:\\tercerolucio\\kiosco\\kioscoinformaticoservices\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB31FCDB-4FE2-4451-AF0D-F5E34A36D672}|KioscoInformaticoServices\\KioscoInformaticoServices.csproj|solutionrelative:kioscoinformaticoservices\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB31FCDB-4FE2-4451-AF0D-F5E34A36D672}|KioscoInformaticoServices\\KioscoInformaticoServices.csproj|c:\\tercerolucio\\kiosco\\kioscoinformaticoservices\\models\\detalleventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB31FCDB-4FE2-4451-AF0D-F5E34A36D672}|KioscoInformaticoServices\\KioscoInformaticoServices.csproj|solutionrelative:kioscoinformaticoservices\\models\\detalleventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB31FCDB-4FE2-4451-AF0D-F5E34A36D672}|KioscoInformaticoServices\\KioscoInformaticoServices.csproj|c:\\tercerolucio\\kiosco\\kioscoinformaticoservices\\models\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB31FCDB-4FE2-4451-AF0D-F5E34A36D672}|KioscoInformaticoServices\\KioscoInformaticoServices.csproj|solutionrelative:kioscoinformaticoservices\\models\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DB0EA8D0-35D4-40A1-98B5-A20BDE5EAD8A}|KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj|c:\\tercerolucio\\kiosco\\kioscoinformaticodesktop\\views\\ventasview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DB0EA8D0-35D4-40A1-98B5-A20BDE5EAD8A}|KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj|solutionrelative:kioscoinformaticodesktop\\views\\ventasview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB31FCDB-4FE2-4451-AF0D-F5E34A36D672}|KioscoInformaticoServices\\KioscoInformaticoServices.csproj|c:\\tercerolucio\\kiosco\\kioscoinformaticoservices\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{FB31FCDB-4FE2-4451-AF0D-F5E34A36D672}|KioscoInformaticoServices\\KioscoInformaticoServices.csproj|solutionrelative:kioscoinformaticoservices\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DB0EA8D0-35D4-40A1-98B5-A20BDE5EAD8A}|KioscoInformaticoDesktop\\KioscoInformaticoDesktop.csproj|c:\\tercerolucio\\kiosco\\kioscoinformaticodesktop\\views\\ventasview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -42,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,71 +70,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Resources.resx",
               "DocumentMoniker": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "KioscoInformaticoServices\\Properties\\Resources.resx",
               "ToolTip": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\Properties\\Resources.resx",
               "RelativeToolTip": "KioscoInformaticoServices\\Properties\\Resources.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-10-23T18:41:00.028Z",
+              "WhenOpened": "2024-10-23T18:47:23.457Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Venta.cs",
-              "DocumentMoniker": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\Models\\Venta.cs",
-              "RelativeDocumentMoniker": "KioscoInformaticoServices\\Models\\Venta.cs",
-              "ToolTip": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\Models\\Venta.cs",
-              "RelativeToolTip": "KioscoInformaticoServices\\Models\\Venta.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAmwA0AAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T18:39:32.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DetalleVenta.cs",
-              "DocumentMoniker": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\Models\\DetalleVenta.cs",
-              "RelativeDocumentMoniker": "KioscoInformaticoServices\\Models\\DetalleVenta.cs",
-              "ToolTip": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\Models\\DetalleVenta.cs",
-              "RelativeToolTip": "KioscoInformaticoServices\\Models\\DetalleVenta.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T18:39:15.301Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\Models\\Cliente.cs",
-              "RelativeDocumentMoniker": "KioscoInformaticoServices\\Models\\Cliente.cs",
-              "ToolTip": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoServices\\Models\\Cliente.cs",
-              "RelativeToolTip": "KioscoInformaticoServices\\Models\\Cliente.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T18:39:13.224Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "VentasView.cs",
               "DocumentMoniker": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoDesktop\\Views\\VentasView.cs",
               "RelativeDocumentMoniker": "KioscoInformaticoDesktop\\Views\\VentasView.cs",
               "ToolTip": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoDesktop\\Views\\VentasView.cs",
               "RelativeToolTip": "KioscoInformaticoDesktop\\Views\\VentasView.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAAAG4AAAANAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAADUAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T18:24:22.178Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "VentasView.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoDesktop\\Views\\VentasView.cs",
               "RelativeDocumentMoniker": "KioscoInformaticoDesktop\\Views\\VentasView.cs",
@@ -158,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Clientes.razor",
               "DocumentMoniker": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoWeb\\Pages\\Clientes\\Clientes.razor",
               "RelativeDocumentMoniker": "KioscoInformaticoWeb\\Pages\\Clientes\\Clientes.razor",
@@ -171,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "AgregarEditarCliente.razor",
               "DocumentMoniker": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoWeb\\Pages\\Clientes\\AgregarEditarCliente.razor",
               "RelativeDocumentMoniker": "KioscoInformaticoWeb\\Pages\\Clientes\\AgregarEditarCliente.razor",
