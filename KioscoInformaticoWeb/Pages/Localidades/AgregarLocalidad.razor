@@ -1,8 +1,8 @@
 ﻿@page "/agregarlocalidad"
-@inject ILocalidadService LocalidadService
+@inject IGenericService<Localidad> LocalidadService
 @inject NavigationManager NavigationManager
 
-<TitlePage Title="Agregando Localidad" />
+<TitlePage Title="Agregando localidad" />
 
 <EditForm Model="localidad" OnValidSubmit="Guardar">
     <DataAnnotationsValidator />
@@ -31,4 +31,3 @@
         NavigationManager.NavigateTo("/localidades");
     }
 }
-   

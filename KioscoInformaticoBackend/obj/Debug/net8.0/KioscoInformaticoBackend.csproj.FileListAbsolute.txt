@@ -403,7 +403,6 @@ C:\TerceroLucio\Kiosco\KioscoInformaticoBackend\bin\Debug\net8.0\System.Drawing.
 C:\TerceroLucio\Kiosco\KioscoInformaticoBackend\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
 C:\TerceroLucio\Kiosco\KioscoInformaticoBackend\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 C:\TerceroLucio\Kiosco\KioscoInformaticoBackend\bin\Debug\net8.0\System.Security.Permissions.dll
-C:\TerceroLucio\Kiosco\KioscoInformaticoBackend\bin\Debug\net8.0\System.Text.Json.dll
 C:\TerceroLucio\Kiosco\KioscoInformaticoBackend\bin\Debug\net8.0\System.Windows.Extensions.dll
 C:\TerceroLucio\Kiosco\KioscoInformaticoBackend\bin\Debug\net8.0\af\Humanizer.resources.dll
 C:\TerceroLucio\Kiosco\KioscoInformaticoBackend\bin\Debug\net8.0\ar\Humanizer.resources.dll
@@ -813,3 +812,10 @@ C:\TerceroLucio\TSDS\KioscoInformaticoBackend\obj\Debug\net8.0\scopedcss\bundle\
 C:\TerceroLucio\TSDS\KioscoInformaticoBackend\obj\Debug\net8.0\KioscoIn.6623E096.Up2Date
 C:\TerceroLucio\TSDS\KioscoInformaticoBackend\obj\Debug\net8.0\KioscoInformaticoBackend.genruntimeconfig.cache
 C:\TerceroLucio\TSDS\KioscoInformaticoBackend\obj\Debug\net8.0\ref\KioscoInformaticoBackend.dll
+C:\TerceroLucio\Kiosco\KioscoInformaticoBackend\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\TerceroLucio\Kiosco\KioscoInformaticoBackend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\TerceroLucio\Kiosco\KioscoInformaticoBackend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\TerceroLucio\Kiosco\KioscoInformaticoBackend\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\TerceroLucio\Kiosco\KioscoInformaticoBackend\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\TerceroLucio\Kiosco\KioscoInformaticoBackend\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\TerceroLucio\Kiosco\KioscoInformaticoBackend\bin\Debug\net8.0\System.Formats.Asn1.dll

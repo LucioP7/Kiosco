@@ -1,4 +1,5 @@
 ﻿using KioscoInformaticoServices.Enums;
+using KioscoInformaticoServices.Interfaces;
 using KioscoInformaticoServices.Models;
 using KioscoInformaticoServices.Services;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -20,18 +21,18 @@ namespace KioscoInformaticoDesktop.Views
     {
         ClienteService clienteService = new ClienteService();
         ProductoService productoService = new ProductoService();
+        IGenericService<Venta> ventaService = new GenericService<Venta>();
         Venta Venta = new Venta();
 
         public VentasView()
         {
             InitializeComponent();
-            CargarCombos();
+
         }
 
-        private async void CargarCombos()
+        private async void AjustePantalla()
         {
-            Stopwatch reloj = new Stopwatch();
-            reloj.Start();
+            #region Combo
             var clienteTask = clienteService.GetAllAsync();
             var productoTask = productoService.GetAllAsync();
 
@@ -47,8 +48,12 @@ namespace KioscoInformaticoDesktop.Views
             cBProductos.SelectedIndex = -1;
 
             cBFormasPago.DataSource = Enum.GetValues(typeof(FormaDePagoEnum));
-            reloj.Stop();
-            Debug.Print($"CargarCombos: {reloj.ElapsedMilliseconds} ms");
+
+            #endregion
+
+            numPrecio.Value = 0;
+            numCantidad.Value = 1;
+            GridDetalleVenta.DataSource = Venta.DetallesVenta.ToList();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -63,13 +68,7 @@ namespace KioscoInformaticoDesktop.Views
                 Producto producto = (Producto)cBProductos.SelectedItem;
                 numPrecio.Value = producto.Precio;
             }
-            else if (cBProductos.SelectedIndex == -1)
-            {
-                numPrecio.Value = 0;
-            }
-            GridDetalleVenta.DataSource = Venta.DetallesVenta.ToList();
-            numCantidad.Value = 1;
-            GridDetalleVenta.OcultarColumnas(new string[] { "Id", "VentaId", "ProductoId", "Eliminado", "Venta" });
+            btnAgregar.Enabled = cBProductos.SelectedIndex != -1;
         }
 
         private void numCantidad_ValueChanged(object sender, EventArgs e)
@@ -84,29 +83,56 @@ namespace KioscoInformaticoDesktop.Views
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            var DetalleVenta = new DetalleVenta
+            var detalleVenta = new DetalleVenta
             {
                 Producto = (Producto)cBProductos.SelectedItem,
                 ProductoId = (int)cBProductos.SelectedValue,
                 Cantidad = (int)numCantidad.Value,
                 PrecioUnitario = numPrecio.Value
             };
-            Venta.DetallesVenta.Add(DetalleVenta);
+            Venta.DetallesVenta.Add(detalleVenta);
             GridDetalleVenta.DataSource = Venta.DetallesVenta.ToList();
-            GridDetalleVenta.OcultarColumnas(new string[] { "Id", "VentaId", "ProductoId", "Eliminado", "Venta" });
+            cBProductos.SelectedIndex = -1;
+            cBProductos.Focus();
+            ActualizarTotalFactura();
+        }
+
+        private void ActualizarTotalFactura()
+        {
+            numTotal.Value = Venta.DetallesVenta.Sum(dv => dv.Subtotal);
         }
 
         private void btnQuitar_Click(object sender, EventArgs e)
         {
-           var detalleVenta = (DetalleVenta)GridDetalleVenta.CurrentRow.DataBoundItem;
+            if (GridDetalleVenta.CurrentRow == null)
+            {
+                MessageBox.Show("Debe seleccionar un detalle de venta");
+                return;
+            }
+            var detalleVenta = (DetalleVenta)GridDetalleVenta.CurrentRow.DataBoundItem;
             Venta.DetallesVenta.Remove(detalleVenta);
             GridDetalleVenta.DataSource = Venta.DetallesVenta.ToList();
-            GridDetalleVenta.OcultarColumnas(new string[] { "Id", "VentaId", "ProductoId", "Eliminado", "Venta" });
+            ActualizarTotalFactura();
         }
 
         private void GridDetalleVenta_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
+            GridDetalleVenta.OcultarColumnas(new string[] { "Id", "VentaId", "ProductoId", "Eliminado", "Venta" });
+            btnQuitar.Enabled = GridDetalleVenta.RowCount > 0;
+        }
 
+        private void btnFinalizarVenta_Click(object sender, EventArgs e)
+        {
+            Venta.ClienteId = (int)cBClientes.SelectedValue;
+            Venta.Fecha = DateTime.Now;
+            Venta.FormaPago = (FormaDePagoEnum)cBFormasPago.SelectedItem;
+            Venta.Total = numTotal.Value;
+            Venta.Iva = Venta.Total * 0.21m;
+
+            Venta.Cliente = null;
+            Venta.DetallesVenta.ToList().ForEach(dv => dv.Producto = null);
+            Venta.DetallesVenta.ToList().ForEach(dv => dv.Venta = null);
+            ventaService.AddAsync(Venta);
         }
     }
 }

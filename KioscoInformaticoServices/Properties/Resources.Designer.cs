@@ -61,7 +61,7 @@ namespace KioscoInformaticoServices.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a true.
+        ///   Busca una cadena traducida similar a false.
         /// </summary>
         internal static string Remoto {
             get {
@@ -79,7 +79,7 @@ namespace KioscoInformaticoServices.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a https://localhost:7202/api/.
+        ///   Busca una cadena traducida similar a https://localhost:7086/api/.
         /// </summary>
         internal static string urlApiLocal {
             get {

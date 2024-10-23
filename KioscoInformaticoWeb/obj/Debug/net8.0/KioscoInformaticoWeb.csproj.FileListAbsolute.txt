@@ -1043,7 +1043,6 @@ C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\bin\Debug\net8.0\wwwroot\_framework\
 C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\bin\Debug\net8.0\wwwroot\_framework\CurrieTechnologies.Razor.SweetAlert2.wasm.gz
 C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\bin\Debug\net8.0\CurrieTechnologies.Razor.SweetAlert2.dll
 C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\webcil\CurrieTechnologies.Razor.SweetAlert2.wasm
-C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\compressed\9r9dmgfolr.gz
 C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\compressed\vecp4a5klh.gz
 C:\TerceroLucio\TSDS\KioscoInformaticoWeb\bin\Debug\net8.0\wwwroot\_framework\blazor.webassembly.js
 C:\TerceroLucio\TSDS\KioscoInformaticoWeb\bin\Debug\net8.0\wwwroot\_framework\dotnet.js
@@ -3139,3 +3138,4 @@ C:\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\compressed\vac65nmpdv.gz
 C:\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\compressed\fveyapdap7.gz
 C:\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\KioscoIn.B00D16F6.Up2Date
 C:\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\ref\KioscoInformaticoWeb.dll
+C:\TerceroLucio\Kiosco\KioscoInformaticoWeb\obj\Debug\net8.0\compressed\pes8mm00qs.gz

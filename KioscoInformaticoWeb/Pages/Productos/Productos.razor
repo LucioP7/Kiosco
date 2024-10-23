@@ -1,7 +1,8 @@
 ﻿@page "/productos"
 @inject IGenericService<Producto> ProductoService
+@inject SweetAlertService SweetAlert;
 
-<TitlePage Title="Productos"/>
+<TitlePage Title="Productos" />
 
 @if (productos != null)
 {
@@ -14,6 +15,7 @@
                 <th>Id</th>
                 <th>Nombre</th>
                 <th>Precio</th>
+                <th></th>
                 <th></th>
             </tr>
         </thead>
@@ -28,7 +30,7 @@
                         <a href="/editarproducto?IdProductoEditado=@producto.Id">Editar</a>
                     </td>
                     <td>
-                        <button class="btn-primary" title="Eliminar" @onclick="@(()=>Elimnar(producto))">Eliminar</button>
+                        <button title="Eliminar" class="btn btn-danger" @onclick="@(()=>Eliminar(producto))">Eliminar</button>
                     </td>
                 </tr>
             }
@@ -48,10 +50,22 @@ else
         productos = await ProductoService.GetAllAsync();
     }
 
-    private async void Elimnar(Producto producto)
+    private async void Eliminar(Producto producto)
     {
-        await ProductoService.DeleteAsync(producto.Id);
-        productos = await ProductoService.GetAllAsync();
-        StateHasChanged();
+        SweetAlertResult respuesta = await SweetAlert.FireAsync(new SweetAlertOptions
+            {
+                Title = "Borrando producto",
+                Text = $"¿Está seguro que desea borrar el producto {producto.Nombre}",
+                Icon = SweetAlertIcon.Warning,
+                ShowCancelButton = true,
+                ConfirmButtonText = "Si, quiero borrarlo!",
+                CancelButtonText = "No, espera"
+            });
+        if (respuesta.IsConfirmed)
+        {
+            await ProductoService.DeleteAsync(producto.Id);
+            productos = await ProductoService.GetAllAsync();
+            StateHasChanged();
+        }
     }
 }

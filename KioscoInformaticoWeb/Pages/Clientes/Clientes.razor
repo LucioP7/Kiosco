@@ -4,7 +4,7 @@
 
 <TitlePage Title="Clientes" />
 
-@if(clientes != null)
+@if (clientes != null)
 {
     <NavLink href="agregareditarcliente">
         Agregar cliente
@@ -23,7 +23,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach(var cliente in clientes)
+            @foreach (var cliente in clientes)
             {
                 <tr>
                     <td>@cliente.Id</td>
@@ -40,14 +40,14 @@
                     </td>
                 </tr>
             }
-            </tbody>
-            </table>
+        </tbody>
+    </table>
 }
 else
 {
     <p><em>Cargando...</em></p>
 }
-                        
+
 
 @code {
     private List<Cliente>? clientes;
@@ -67,7 +67,7 @@ else
                 ShowCancelButton = true,
             });
 
-        if(respuesta.IsConfirmed)
+        if (respuesta.IsConfirmed)
         {
             await ClienteService.DeleteAsync(cliente.Id);
             clientes = await ClienteService.GetAllAsync();

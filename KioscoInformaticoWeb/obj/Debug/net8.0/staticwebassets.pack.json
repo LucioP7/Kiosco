@@ -1,43 +1,43 @@
 {
   "Files": [
     {
-      "Id": "C:\\Kiosco\\KioscoInformaticoWeb\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoWeb\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Kiosco\\KioscoInformaticoWeb\\obj\\Debug\\net8.0\\compressed\\vwho54p29r.gz",
+      "Id": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoWeb\\obj\\Debug\\net8.0\\compressed\\pes8mm00qs.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "C:\\Kiosco\\KioscoInformaticoWeb\\obj\\Debug\\net8.0\\scopedcss\\bundle\\KioscoInformaticoWeb.styles.css",
+      "Id": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoWeb\\obj\\Debug\\net8.0\\scopedcss\\bundle\\KioscoInformaticoWeb.styles.css",
       "PackagePath": "staticwebassets\\KioscoInformaticoWeb.styles.css"
     },
     {
-      "Id": "C:\\Kiosco\\KioscoInformaticoWeb\\wwwroot\\css\\app.css",
+      "Id": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoWeb\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Kiosco\\KioscoInformaticoWeb\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoWeb\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Kiosco\\KioscoInformaticoWeb\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoWeb\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Kiosco\\KioscoInformaticoWeb\\wwwroot\\favicon.png",
+      "Id": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoWeb\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Kiosco\\KioscoInformaticoWeb\\wwwroot\\icon-192.png",
+      "Id": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoWeb\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "C:\\Kiosco\\KioscoInformaticoWeb\\wwwroot\\index.html",
+      "Id": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoWeb\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Kiosco\\KioscoInformaticoWeb\\wwwroot\\sample-data\\weather.json",
+      "Id": "C:\\TerceroLucio\\Kiosco\\KioscoInformaticoWeb\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {

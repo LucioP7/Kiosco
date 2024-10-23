@@ -50,19 +50,19 @@
             btnQuitar = new Button();
             btnFinalizarVenta = new Button();
             label7 = new Label();
-            numericUpDown1 = new NumericUpDown();
+            numNeto = new NumericUpDown();
             label8 = new Label();
-            numericUpDown2 = new NumericUpDown();
+            numIVA = new NumericUpDown();
             label9 = new Label();
-            numericUpDown3 = new NumericUpDown();
+            numTotal = new NumericUpDown();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numSubTotal).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numCantidad).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numPrecio).BeginInit();
             ((System.ComponentModel.ISupportInitialize)GridDetalleVenta).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numNeto).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numIVA).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numTotal).BeginInit();
             SuspendLayout();
             // 
             // dateTimeFecha
@@ -283,6 +283,7 @@
             btnFinalizarVenta.TabIndex = 15;
             btnFinalizarVenta.Text = "Finalizar Venta";
             btnFinalizarVenta.UseVisualStyleBackColor = true;
+            btnFinalizarVenta.Click += btnFinalizarVenta_Click;
             // 
             // label7
             // 
@@ -294,16 +295,16 @@
             label7.TabIndex = 15;
             label7.Text = "Neto:";
             // 
-            // numericUpDown1
+            // numNeto
             // 
-            numericUpDown1.DecimalPlaces = 2;
-            numericUpDown1.Enabled = false;
-            numericUpDown1.Location = new Point(259, 459);
-            numericUpDown1.Maximum = new decimal(new int[] { -1593835520, 466537709, 54210, 0 });
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(122, 27);
-            numericUpDown1.TabIndex = 14;
-            numericUpDown1.TextAlign = HorizontalAlignment.Right;
+            numNeto.DecimalPlaces = 2;
+            numNeto.Enabled = false;
+            numNeto.Location = new Point(259, 459);
+            numNeto.Maximum = new decimal(new int[] { -1593835520, 466537709, 54210, 0 });
+            numNeto.Name = "numNeto";
+            numNeto.Size = new Size(122, 27);
+            numNeto.TabIndex = 14;
+            numNeto.TextAlign = HorizontalAlignment.Right;
             // 
             // label8
             // 
@@ -315,16 +316,16 @@
             label8.TabIndex = 17;
             label8.Text = "IVA:";
             // 
-            // numericUpDown2
+            // numIVA
             // 
-            numericUpDown2.DecimalPlaces = 2;
-            numericUpDown2.Enabled = false;
-            numericUpDown2.Location = new Point(393, 459);
-            numericUpDown2.Maximum = new decimal(new int[] { -1593835520, 466537709, 54210, 0 });
-            numericUpDown2.Name = "numericUpDown2";
-            numericUpDown2.Size = new Size(122, 27);
-            numericUpDown2.TabIndex = 16;
-            numericUpDown2.TextAlign = HorizontalAlignment.Right;
+            numIVA.DecimalPlaces = 2;
+            numIVA.Enabled = false;
+            numIVA.Location = new Point(393, 459);
+            numIVA.Maximum = new decimal(new int[] { -1593835520, 466537709, 54210, 0 });
+            numIVA.Name = "numIVA";
+            numIVA.Size = new Size(122, 27);
+            numIVA.TabIndex = 16;
+            numIVA.TextAlign = HorizontalAlignment.Right;
             // 
             // label9
             // 
@@ -336,16 +337,16 @@
             label9.TabIndex = 19;
             label9.Text = "Total";
             // 
-            // numericUpDown3
+            // numTotal
             // 
-            numericUpDown3.DecimalPlaces = 2;
-            numericUpDown3.Enabled = false;
-            numericUpDown3.Location = new Point(525, 459);
-            numericUpDown3.Maximum = new decimal(new int[] { -1593835520, 466537709, 54210, 0 });
-            numericUpDown3.Name = "numericUpDown3";
-            numericUpDown3.Size = new Size(122, 27);
-            numericUpDown3.TabIndex = 18;
-            numericUpDown3.TextAlign = HorizontalAlignment.Right;
+            numTotal.DecimalPlaces = 2;
+            numTotal.Enabled = false;
+            numTotal.Location = new Point(525, 459);
+            numTotal.Maximum = new decimal(new int[] { -1593835520, 466537709, 54210, 0 });
+            numTotal.Name = "numTotal";
+            numTotal.Size = new Size(122, 27);
+            numTotal.TabIndex = 18;
+            numTotal.TextAlign = HorizontalAlignment.Right;
             // 
             // VentasView
             // 
@@ -354,11 +355,11 @@
             ClientSize = new Size(946, 492);
             ControlBox = false;
             Controls.Add(label9);
-            Controls.Add(numericUpDown3);
+            Controls.Add(numTotal);
             Controls.Add(label8);
-            Controls.Add(numericUpDown2);
+            Controls.Add(numIVA);
             Controls.Add(label7);
-            Controls.Add(numericUpDown1);
+            Controls.Add(numNeto);
             Controls.Add(btnFinalizarVenta);
             Controls.Add(btnQuitar);
             Controls.Add(GridDetalleVenta);
@@ -379,9 +380,9 @@
             ((System.ComponentModel.ISupportInitialize)numCantidad).EndInit();
             ((System.ComponentModel.ISupportInitialize)numPrecio).EndInit();
             ((System.ComponentModel.ISupportInitialize)GridDetalleVenta).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numNeto).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numIVA).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numTotal).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -409,10 +410,10 @@
         private Button btnQuitar;
         private Button btnFinalizarVenta;
         private Label label7;
-        private NumericUpDown numericUpDown1;
+        private NumericUpDown numNeto;
         private Label label8;
-        private NumericUpDown numericUpDown2;
+        private NumericUpDown numIVA;
         private Label label9;
-        private NumericUpDown numericUpDown3;
+        private NumericUpDown numTotal;
     }
 }
