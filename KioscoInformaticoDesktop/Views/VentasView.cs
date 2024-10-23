@@ -1,4 +1,5 @@
-﻿using KioscoInformaticoServices.Enums;
+﻿using KioscoInformaticoDesktop.Reports;
+using KioscoInformaticoServices.Enums;
 using KioscoInformaticoServices.Interfaces;
 using KioscoInformaticoServices.Models;
 using KioscoInformaticoServices.Services;
@@ -22,7 +23,7 @@ namespace KioscoInformaticoDesktop.Views
         ClienteService clienteService = new ClienteService();
         ProductoService productoService = new ProductoService();
         IGenericService<Venta> ventaService = new GenericService<Venta>();
-        Venta Venta = new Venta();
+        Venta venta = new Venta();
 
         public VentasView()
         {
@@ -53,7 +54,7 @@ namespace KioscoInformaticoDesktop.Views
 
             numPrecio.Value = 0;
             numCantidad.Value = 1;
-            GridDetalleVenta.DataSource = Venta.DetallesVenta.ToList();
+            GridDetalleVenta.DataSource = venta.DetallesVenta.ToList();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -69,6 +70,7 @@ namespace KioscoInformaticoDesktop.Views
                 numPrecio.Value = producto.Precio;
             }
             btnAgregar.Enabled = cBProductos.SelectedIndex != -1;
+            numCantidad.Value = 1;
         }
 
         private void numCantidad_ValueChanged(object sender, EventArgs e)
@@ -90,8 +92,8 @@ namespace KioscoInformaticoDesktop.Views
                 Cantidad = (int)numCantidad.Value,
                 PrecioUnitario = numPrecio.Value
             };
-            Venta.DetallesVenta.Add(detalleVenta);
-            GridDetalleVenta.DataSource = Venta.DetallesVenta.ToList();
+            venta.DetallesVenta.Add(detalleVenta);
+            GridDetalleVenta.DataSource = venta.DetallesVenta.ToList();
             cBProductos.SelectedIndex = -1;
             cBProductos.Focus();
             ActualizarTotalFactura();
@@ -99,7 +101,7 @@ namespace KioscoInformaticoDesktop.Views
 
         private void ActualizarTotalFactura()
         {
-            numTotal.Value = Venta.DetallesVenta.Sum(dv => dv.Subtotal);
+            numTotal.Value = venta.DetallesVenta.Sum(dv => dv.Subtotal);
         }
 
         private void btnQuitar_Click(object sender, EventArgs e)
@@ -110,8 +112,8 @@ namespace KioscoInformaticoDesktop.Views
                 return;
             }
             var detalleVenta = (DetalleVenta)GridDetalleVenta.CurrentRow.DataBoundItem;
-            Venta.DetallesVenta.Remove(detalleVenta);
-            GridDetalleVenta.DataSource = Venta.DetallesVenta.ToList();
+            venta.DetallesVenta.Remove(detalleVenta);
+            GridDetalleVenta.DataSource = venta.DetallesVenta.ToList();
             ActualizarTotalFactura();
         }
 
@@ -121,17 +123,19 @@ namespace KioscoInformaticoDesktop.Views
             btnQuitar.Enabled = GridDetalleVenta.RowCount > 0;
         }
 
-        private void btnFinalizarVenta_Click(object sender, EventArgs e)
+        private async void btnFinalizarVenta_Click(object sender, EventArgs e)
         {
-            Venta.ClienteId = (int)cBClientes.SelectedValue;
-            Venta.Fecha = DateTime.Now;
-            Venta.FormaPago = (FormaDePagoEnum)cBFormasPago.SelectedItem;
-            Venta.Total = numTotal.Value;
-            Venta.Iva = Venta.Total * 0.21m;
-            Venta.Cliente = null;
-            Venta.DetallesVenta.ToList().ForEach(dv => dv.Producto = null);
-            Venta.DetallesVenta.ToList().ForEach(dv => dv.Venta = null);
-            ventaService.AddAsync(Venta);
+            venta.ClienteId = (int)cBClientes.SelectedValue;
+            venta.Fecha = DateTime.Now;
+            venta.FormaPago = (FormaDePagoEnum)cBFormasPago.SelectedItem;
+            venta.Total = numTotal.Value;
+            venta.Iva = venta.Total * 0.21m;
+            venta.Cliente = null;
+            venta.DetallesVenta.ToList().ForEach(dv => dv.Producto = null);
+            venta.DetallesVenta.ToList().ForEach(dv => dv.Venta = null);
+            var nuevaVenta = await ventaService.AddAsync(venta);
+            var facturaVentaViewReport = new FacturaVentaViewReport(nuevaVenta);
+            facturaVentaViewReport.ShowDialog();
         }
     }
 }

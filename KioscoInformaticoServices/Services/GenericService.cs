@@ -21,10 +21,9 @@ namespace KioscoInformaticoServices.Services
             {
                 urlApi = Properties.Resources.urlApiLocal;
             }
-            else
-            {
-                this._endpoint = urlApi + ApiEndpoints.GetEndpoint(typeof(T).Name);
-            }
+
+            this._endpoint = urlApi + ApiEndpoints.GetEndpoint(typeof(T).Name);
+
         }
 
         public async Task<List<T>?> GetAllAsync()

@@ -750,3 +750,4 @@ C:\TerceroLucio\Kiosco\KioscoInformaticoDesktop\obj\Debug\net8.0-windows\KioscoI
 C:\TerceroLucio\Kiosco\KioscoInformaticoDesktop\obj\Debug\net8.0-windows\KioscoInformaticoDesktop.ViewReports.LocalidadesViewReport.resources
 C:\TerceroLucio\Kiosco\KioscoInformaticoDesktop\obj\Debug\net8.0-windows\KioscoInformaticoDesktop.Views.ProveedoresView.resources
 C:\TerceroLucio\Kiosco\KioscoInformaticoDesktop\obj\Debug\net8.0-windows\KioscoInformaticoDesktop.Views.VentasView.resources
+C:\TerceroLucio\Kiosco\KioscoInformaticoDesktop\obj\Debug\net8.0-windows\KioscoInformaticoDesktop.Reports.FacturaVentaViewReport.resources
